@@ -1,0 +1,204 @@
+
+
+.french_map,
+.map_wrapper,
+.map_holder,
+.map_svg,
+g,
+path {
+  fill: gainsboro ;
+  stroke-width: 1px ;
+  stroke: gray;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: .2s ;
+}
+
+h1{
+  font-weight: bold;
+  margin: 50px 0 50px 0;
+  
+}
+p{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ .french_map .map_wrapper .map_holder .map_svg g path:hover {
+  fill: #111D5E ;
+  stroke: #ffd2d2 ;
+}
+
+
+#us-map {
+  display: block !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+path:hover,
+circle:hover {
+  stroke: #002868 ;
+  stroke-width: 2px ;
+  stroke-linejoin: round ;
+  fill: #002868 ;
+  cursor: pointer ;
+}
+
+#path {
+  fill: none ;
+  stroke: #A9A9A9 ;
+  cursor: default ;
+}
+
+#info-box {
+  display: none ;
+  position: absolute ;
+  top: 0px ;
+  left: 0px  ;
+  z-index: 1;
+  background-color: #ffffff ;
+  border: 2px solid #ffffff ;
+  border-radius: 5px ;
+  padding: 5px ;
+  font-family: arial ;
+  width: 100px;
+  height: 100px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  
+    }
+    .round{
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+    }
+
+    .right-in:after{
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: auto;
+      right: 35px;
+      top: 80px;
+      bottom: auto;
+      z-index: 0;
+      transform: rotate(225deg); 
+      border: 12px solid;
+      border-color: white transparent transparent white;
+    }
+   
+.act-content{
+  background-color: #EBECF0;
+
+}
+    .act-img{
+      background-color: #EBECF0;
+    }
+
+
+
+     .french_map .map_wrapper .map_holder .map_svg g path {
+      fill: gray;
+      stroke-width: 1px;
+      stroke: gray;
+      cursor: pointer;
+      transition: 0.3s;
+   }
+     .french_map .map_wrapper .map_holder .map_svg g path:hover {
+      fill: #111d5e;
+   }
+/****************************************************map****************************/
+
+.french_map,
+.map_wrapper,
+.map_holder,
+.map_svg,
+g,
+path {
+  fill: gainsboro ;
+  stroke-width: 1px ;
+  stroke: gray;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: .2s ;
+}
+
+h1{
+  font-weight: bold;
+  margin: 50px 0 50px 0;
+  
+}
+ .french_map .map_wrapper .map_holder .map_svg g path:hover {
+  fill: #111D5E ;
+  stroke: #ffd2d2 ;
+}
+
+
+#us-map {
+  display: block !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+path:hover,
+circle:hover {
+  stroke: #002868 ;
+  stroke-width: 2px ;
+  stroke-linejoin: round ;
+  fill: #002868 ;
+  cursor: pointer ;
+}
+
+#path {
+  fill: none ;
+  stroke: #A9A9A9 ;
+  cursor: default ;
+}
+
+#info-box {
+  display: none ;
+  position: absolute ;
+  top: 0px ;
+  left: 0px  ;
+  z-index: 1;
+  background-color: #ffffff ;
+  border: 2px solid #ffffff ;
+  border-radius: 5px ;
+  padding: 5px ;
+  font-family: arial ;
+  width: 100px;
+  height: 100px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  
+    }
+    .round{
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+    }
+
+    .right-in:after{
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: auto;
+      right: 35px;
+      top: 80px;
+      bottom: auto;
+      z-index: 0;
+      transform: rotate(225deg); 
+      border: 12px solid;
+      border-color: white transparent transparent white;
+    }
+ 

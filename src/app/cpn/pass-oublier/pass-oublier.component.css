@@ -1,0 +1,12 @@
+.login_container{
+    background-color: #EBECF0;
+}
+
+.login_container .login_content .login_wrapper .row{
+    margin-top:0;
+    margin-right: 0;
+    margin-left: 0;
+}
+.container{
+    margin: 30px;
+}

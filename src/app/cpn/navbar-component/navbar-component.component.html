@@ -1,0 +1,49 @@
+
+<nav class="navbar navbar-expand-lg nav_g" >
+  <a class="navbar-brand" [routerLink]="'/home'">
+    <img class="brand_logo d-inline-block align-text-top nav_img" src="assets/cpnimages/logo/logo-cpn-blue.png" alt="Logo">  </a>
+    <button class="navbar-toggler" style="box-shadow: none;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="far fa-bars navbar-toggler-icon" style="color:#111d5e;z-index:1;"></i>
+    </button>
+    
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto topnav" >
+      <li class="nav-item">
+         <a class="nav-link" *ngIf="role=='logout'" [routerLink]="'/home'">Acceuil</a>
+        <a class="nav-link" *ngIf="role=='tpe'" [routerLink]="'/cpn/Home_tpe_pme'">Acceuil</a>
+        <a class="nav-link" *ngIf="role=='age'" [routerLink]="'/cpn/agence'">Acceuil</a>
+        <a class="nav-link" *ngIf="role=='col'" [routerLink]="'/cpn/Home_collectivite'">Acceuil</a>
+      </li>
+      <li class="nav-item" >
+        <a *ngIf="!connect " class="nav-link" [routerLink]="'agenda'"   > Agenda +</a>
+        <a *ngIf="connect " class="nav-link" [routerLink]="'calendar'"  > Agenda +</a>
+      </li>
+
+      <li class="nav-item">
+        <a [routerLink]="'/test'" class="nav-link"  >aide-aux-entreprises</a>
+      </li>
+
+      <li class="nav-item" >
+        <a *ngIf="!connect " class="nav-link con" [routerLink]="'Connexion'"> Connexion</a>
+      </li>
+      
+      <li class="nav-item" *ngIf="connect" >
+        <div class="dropdown" >
+          <a class="nav-link dropdown-toggle"role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ user.first_name }}
+          </a>
+        
+          <div class="dropdown-menu drop"  aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" [routerLink]="'profile'">profile</a>
+            <a class="dropdown-item" (click)="logout()">déconnexion</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+

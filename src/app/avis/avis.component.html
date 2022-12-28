@@ -1,0 +1,174 @@
+
+ <div class="container">
+    <form [formGroup]="AvisForm" (ngSubmit)="onSubmit()"  >
+
+            <div class="myCard">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="myLeftCtn">
+                            
+                        <div class="myForm text-center needs-validation"   novalidate>
+                           <div class="block">
+                            <div class="circle">
+                                <img class="logo1" src="assets/cpnimages/logo/logo-cpn-blanc.png" alt="">
+                            </div>
+                           
+                            <header class="left">
+                                <h1>Identifié vous</h1>
+                            </header>
+                            </div>
+
+                            <div class="row">
+                            <div class="col"> 
+                            <div class="form-group">
+                                <i class="fas fa-user"></i>
+                                <input class="myInput" type="text"  formControlName="username" placeholder="Username" id="username" required>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                        </div> 
+                        <div class="col">
+                            <div class="form-group">
+                                <i class="fas fa-envelope"></i>
+                                <input class="myInput" formControlName="email" placeholder="Email" type="text" id="email" required>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                        </div>  
+                            </div>
+
+                            <div class="row">
+                                <div class="col"> 
+                            <div class="form-group">
+                                <i class="fas fa-phone"></i>
+                                <input class="myInput" type="text"  formControlName="phone" id="phone" placeholder="telephone" required>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                                </div>
+                                <div class="col"> 
+                            <div class="form-group">
+                                <i class="fas fa-link"></i>
+                                <input class="myInput" type="text"  formControlName="site" id="url" placeholder="lien site web" required>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                                </div>
+                            </div>                          
+
+                            <input type="submit" class="butt" value="Envoyer">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <img class="background" src="assets/cpnimages/logo/logo-cpn-blanc.png" alt="">
+                        <div class="myRightCtn">
+                            <div class="myForm text-center needs-validation" novalidate>
+                                <header >
+                                    <h1>Enquête de satisfaction</h1>
+                                    <p>votre avis a un réél intéret pour nous dans le cadre de l’amélioration de notre service</p>
+                                </header>
+                             
+                                <div class="row">
+                                <div class="col"> 
+                                    <div class="form-group">
+                                        <label class="form-check-label"> Avez-vous bénéficier d’un financement attribuer par le CPN ?</label>
+                                        <div class="radio">
+                                            <div class="form-check">
+                                                <input type="radio"  formControlName="finance" class="form-check-input" id="finance1" name="finance" value="oui" checked>Oui
+                                                <label class="form-check-label" for="finance1"></label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input type="radio" formControlName="finance" class="form-check-input" id="finance2" name="finance" value="non">Non
+                                                <label class="form-check-label" for="finance2"></label>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col"> 
+                                    <div class="form-group">
+                                        <label class="form-check-label"> Note sur l’agent du CPN.</label>
+                                        <div class="rate"  >
+                                            <input type="radio" (click)="rating(6)" id="star1"  name="rate" value="1" />
+                                            <label for="star1" title="text">1 stars</label>
+                                            <input type="radio" (click)="rating(5)" id="star2" name="rate" value="2" />
+                                            <label for="star2" title="text">2 stars</label>
+                                            <input type="radio" (click)="rating(4)" id="star3" name="rate" value="3" />
+                                            <label for="star3" title="text">3 stars</label>
+                                            <input type="radio" (click)="rating(3)" id="star4" name="rate" value="4" />
+                                            <label for="star4" title="text">4 stars</label>
+                                            <input type="radio" (click)="rating(2)" id="star5" name="rate" value="5" />
+                                            <label for="star5" title="text">5 star</label>
+                                            <input type="radio" (click)="rating(1)" id="star6" name="rate" value="6" />
+                                            <label for="star6" title="text">6 star</label>
+                                          </div>                                     
+                                    </div>
+                                </div>    
+                                </div>
+                             
+                                <div class="row">
+                                    <div class="col"> 
+                                        <div class="form-group">
+                                            <label class="form-check-label"> Grace au financement le Reste a charge n’a pas eu de conséquence 
+                                                sur ma trésorerie il a été adapté à votre Budget ?</label>
+                                            <div class="radio">
+                                                <div class="form-check">
+                                                    <input type="radio" formControlName="buget" class="form-check-input" id="buget1" name="buget" value="oui" checked>Oui
+                                                    <label class="form-check-label" for="buget1"></label>
+                                                  </div>
+                                                  <div class="form-check">
+                                                    <input type="radio" formControlName="buget" class="form-check-input" id="buget2" name="buget" value="non">Non
+                                                    <label class="form-check-label" for="buget2"></label>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col"> 
+                                            <div class="form-group">
+                                                <label class="form-check-label">le Cabinet de propulsion Numérique vous a t’il apporté une aide majeur pour réalisé votre projet digital en terme de financement, d’accompagnement ou d’expertise ?</label>
+                                                <textarea class="myInput" formControlName="comment" type="text" id="commentaire" placeholder="commentaire" required></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                <div class="row">
+                                    <div class="col"> 
+                                        <div class="form-group end">
+                                            <label class="form-check-label"> Avez-vous d’autre projet numérique à financer au cours de l’année ? 
+                                                (si oui lequel)</label>
+                                            <div class="radio">
+                                                <div class="form-check">
+                                                    <input type="radio" formControlName="proj" class="form-check-input" id="proj1" name="proj" value="financé mon développement application" checked>financé mon développement application
+                                                    <label class="form-check-label" for="proj1"></label>
+                                                  </div>
+                                                  <div class="form-check">
+                                                    <input type="radio" formControlName="proj" class="form-check-input" id="proj2" name="proj" value="financé mon CRM -ERP d’entreprise">financé mon CRM -ERP d’entreprise
+                                                    <label class="form-check-label" for="proj2"></label>
+                                                  </div>
+                                                  <div class="form-check">
+                                                    <input type="radio" formControlName="proj" class="form-check-input" id="proj3" name="proj" value="financé ma communication réseaux sociaux">financé ma communication réseaux sociaux.
+                                                    <label class="form-check-label" for="proj3"></label>
+                                                  </div>
+                                                  <div class="form-check">
+                                                    <input type="radio" formControlName="proj" class="form-check-input" id="proj4" name="proj" value="financé un projet d’innovation digitale">financé un projet d’innovation digitale.
+                                                    <label class="form-check-label" for="proj4"></label>
+                                                  </div>
+                                                  <div class="form-check">
+                                                    <input type="radio" formControlName="proj" class="form-check-input" id="proj5" name="proj" value="non">Non
+                                                    <label class="form-check-label" for="proj5"></label>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                    </div>
+                                 
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </form>
+    </div>
+

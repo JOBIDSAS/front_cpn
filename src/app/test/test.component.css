@@ -1,0 +1,2770 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.footer{
+    width: 100%;
+    max-height: 150px;
+    min-height: 150px;
+    height: 100%;
+    background-color:  #111D5Eff;
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100%;
+    align-items: center;
+    width: 10%;
+    margin-left: 10px;
+}
+.left img{
+    width: 50%;
+}
+.point{
+    font-size: 10px;
+    color:rgb(153, 153, 153);
+    margin-left: 10px;
+    
+}
+i{
+    color:rgb(153, 153, 153);
+}
+i:hover{
+    color: white;
+    cursor: pointer;
+}
+.iconNex{
+    font-size: 25px;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+.checkIcon{
+    color: white;
+}
+
+.center{
+ width: 100%;
+ height: 100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+}
+
+/***********************************************btn****************************/
+.butttonREd{
+    background-color: rgb(206, 0, 0);
+    color: white;
+}
+ button:hover{
+    background-color: rgb(0, 158, 18);
+    color: white;
+    width: 161px;
+}
+#siteEntrp{
+    
+    width: 161px;
+}
+/*********************************************slide 1 ***********************/
+.slide1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.slide1 .image{
+  order: 2;
+  width: 70%;
+  height: 100%;
+}
+.slide1 .test h1{
+    font-size: 35px;
+    font-family: "Poppins", sans-serif !important;
+}
+    .slide1 .test h1:hover{
+        color: red;
+        zoom: 1.1;
+        }
+.slide1 .test{
+ order: 1;
+ display: flex;
+ flex-direction: column;
+   justify-content: center;
+   align-items:center;
+width: 40%;
+height: 100%;
+}
+
+   .slide1 .test input{
+    width: 80%;
+    height: 40px;
+    border-color: rgb(212, 5, 5);
+       }
+
+/*********************************************slide 0 ***********************/
+.slide0{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.slide0 .image{
+  order: 2;
+  width: 52%;
+  height: 100%;
+}
+.slide0 .test{
+    order: 1;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width:40%;
+   height: 100%;
+   }
+   .slide0 .test h1{
+    font-size: 35px;
+    font-family: "Poppins", sans-serif !important;
+}
+    .slide0 .test h1:hover{
+        color: red;
+        zoom: 1.1;
+        }
+   .slide0 .test button{
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    border-color: rgb(192, 3, 3);
+       }
+   
+       /*********************************************slide 2 ***********************/
+       .slide2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+    .slide2 .image{
+      order: 1;
+      width: 55%;
+      height: 100%;
+    }
+    .slide2 .test{
+        order: 2;
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: flex-start;
+       width:40%;
+       height: 100%;
+       }
+       .slide2 .test h1{
+        font-size: 35px;
+        font-family: "Poppins", sans-serif !important;
+    }
+        .slide2 .test h1:hover{
+            color: red;
+            zoom: 1.1;
+            }
+       
+       
+           .slide2 .test .ng-select {
+            border:0px;
+            min-height: 0px;
+            border-radius: 0;
+            width: 480px;
+            height: 40px;
+            border-color: rgb(212, 5, 5);
+        }
+        .slide2 .test  .ng-select .ng-select-container  {            
+            min-height: 0px;
+            border-radius: 0;
+            width: 480px;
+            height: 40px;
+            border-color: rgb(212, 5, 5);
+        }
+        .slide2 .test  .ng-select ::ng-deep .ng-select-container  {            
+            min-height: 0px;
+            border-radius: 0;
+            width: 480px;
+            height: 40px;
+            border-color: rgb(212, 5, 5);
+        }
+        .slide2 .test ng-select.ng-invalid.ng-touched .ng-select-container {
+            border-color: #dc3545;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 3px #fde6e8;
+            width: 480px;
+            height: 40px;
+            border-color: rgb(212, 5, 5);
+        }
+        
+     /*********************************************slide 3 ***********************/
+        .slide3{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+    .slide3 .image{
+        order: 2;
+        width: 54%;
+        height: 100%;
+    }
+    .slide3 .test{
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 50px;
+        width:40%;
+        height: 70%;
+        }
+        .slide3 .test h1{
+            font-size: 35px;
+            font-family: "Poppins", sans-serif !important;
+            }
+            .slide3 .test h1:hover{
+                color: red;
+                zoom: 1.1;
+                }
+        .slide3 .test .blockBtn{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+
+        }
+        .slide3 .test .blockBtn .sousBlock{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+ 
+         }
+        .slide3 .test .blockBtn button{
+        width: 310px;
+        height: 50px;
+        margin: 5px;
+        border-color: rgb(192, 3, 3);
+            }  
+            .slide3 .test .blockBtn .sousBlock button{
+                width: 150px;
+                margin: 5px;
+                    }   
+
+/*********************************************slide 4 ***********************/
+    .slide4{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+    .slide4 .image{
+        margin-left: 100px;
+        order: 1;
+        
+        display: flex;
+        z-index: 1;
+        margin-top: 55px;
+    }
+    .slide4 .test{
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width:40%;
+        height: 100%;
+        }
+        .slide4 .test h1{
+            font-size: 35px;
+            font-family: "Poppins", sans-serif !important;
+                    }
+            .slide4 .test h1:hover{
+                color: red;
+                zoom: 1.1;
+                }
+        .slide4 .test input{
+        width: 80%;
+        height: 40px;
+        border-color: rgb(212, 5, 5);
+            }
+
+       
+   
+     /********************************************* slide 5 ***********************/
+     .slide5{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+    .slide5 .image{
+        order: 1;
+width: 49%;
+height: 100%;
+z-index: 1;
+display: flex;
+margin-top: -11px;
+    }
+   
+    
+    .slide5 .test{
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:50%;
+        height: 100%;
+        }
+        .slide5 .test h1{
+        font-size: 35px;
+        font-family: "Poppins", sans-serif !important;
+    }
+        .slide5 .test h1:hover{
+            color: red;
+            zoom: 1.1;
+            }
+        .slide5 .test .blockBtn{
+           display: flex;
+           flex-direction: row;
+           justify-content: space-around;
+            width: 100%;
+            height: 20%;
+        }
+        .slide5 .test .blockBtn .sousBlock{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center; 
+         }
+    
+         .slide5 .test .blockBtn .sousBlock .qty{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;            
+            }
+       
+    .slide5 .test .blockBtn .sousBlock .qty input{
+        order: 2;
+        width: 80px;
+        height: 50px;
+        border: 4px solid rgb(212, 5, 5);
+        text-align: center;
+        }
+    .slide5 .test .blockBtn .sousBlock .qty p{
+        order: 1;
+        margin: 0 5px 0 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+            }
+            .slide5 .test .blockBtn .sousBlock .qty .baiss{ display: none;}
+            .slide5 .test .blockBtn .sousBlock .qty .augm{ display: none;}
+            .slide5 .test .blockBtn .sousBlock .qty  .baissD{ display: contents;}
+            .slide5 .test .blockBtn .sousBlock .qty .augmD{ display: contents;}
+    .slide5 .test .blockBtn .sousBlock .qty .qtyBtn{
+        order: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        }
+        .slide5 .test .blockBtn .sousBlock .qty .qtyBtn button{
+            border: none;
+            border-bottom: 1px solid white;
+            margin-bottom: 1px;
+            width: 5px;
+            border-radius: 0px;
+            height: 25px;
+            color: white;
+            background-color: rgb(212, 5, 5);
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            justify-content: center;
+            align-items: center;
+            }
+            #Baisse:hover
+            {  cursor: pointer;
+                color: green;
+                font-size: 25px;
+            }
+            #Augmentation:hover
+            { cursor: pointer;
+                color: green;
+                font-size: 25px;
+            }
+            #Etat:hover
+            { cursor: pointer;
+                color: green;
+                font-size: 25px;
+            }
+            
+            /*********************************************slide 6 ***********************/
+            .slide6{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                height: 100%;
+            }
+            .slide6 .image{
+                order: 2;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items:center;
+                width:53%;
+                height: 100%;
+            }
+            .slide6 .image img{
+                order: 2;
+                height: 25%;
+                width: 15%;
+                    }
+            .slide6 .image h1{
+                order: 1;
+                font-size: 50px;
+                text-align: center;
+                margin-bottom: 20px;
+                    }
+
+
+            .slide6 .test{
+                order: 2;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                width:40%;
+                height: 100%;
+                }
+             
+                .slide6 .test select{
+                width: 80%;
+                height: 40px;
+                border-color: rgb(212, 5, 5);
+                    }
+
+    
+/*********************************************slide 7 ***********************/
+.slide7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.slide7 .colum1{
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+.slide7 .colum2{
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    height: 100%;
+}
+.slide7 .image{
+    margin-left: 50px;
+    order: 1;
+    width: 37%;
+    height: 100%;
+}
+.slide7 .test{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width:40%;
+    height: 100%;
+    }
+    .slide7 .test h1{
+        font-size: 35px;
+        font-family: "Poppins", sans-serif !important;
+                }
+        .slide7 .test h1:hover{
+            color: red;
+            zoom: 1.1;
+            }
+    .slide7 .test input{
+    width: 80%;
+    height: 40px;
+    border-color: rgb(212, 5, 5);
+        }
+.slide7 .progress{
+    order: 3;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    background: rgb(255, 255, 255);
+    outline: none;
+    border: 5px solid rgb(189, 8, 8);
+    border-radius: 8px;
+  }
+  
+  
+  /* for chrome/safari */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 60px;
+    background: rgb(248, 224, 5);
+    cursor: pointer;
+    border: 5px solid rgb(248, 224, 5);
+    border-radius: 50px;
+  }
+  
+  /* for firefox */
+  .slider::-moz-range-thumb {
+    width: 20px;
+    height: 60px;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    border: 5px solid rgb(189, 8, 8);
+    border-radius: 4px;
+  }
+.__range{
+    width: 80%;
+    height: 100%;
+}
+.__range-step{
+	position: relative;                
+}
+.__range-step{
+	position: relative;                
+}
+
+.__range-max{
+	float: right;
+}
+           
+
+
+.__range input::range-progress {	background: rgb(189, 8, 8);
+}
+.slider input[type=range]::-moz-range-progress {
+    background-color: #c657a0;
+  }
+.__range-step datalist {
+	position:relative;
+	display: flex;
+	justify-content: space-between;
+	height: auto;
+	bottom: 10px;
+	/* disable text selection */
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */                
+	user-select: none; /* Standard */
+	/* disable click events */
+	pointer-events:none;  
+}
+.__range-step datalist option {
+	width: 10px;
+	height: 10px;
+	min-height: 10px;
+	border-radius: 100px;
+	/* hide text */
+	white-space: nowrap;       
+  padding:0;
+  line-height: 40px;
+}
+
+
+/*********************************************slide 8 ***********************/
+.slide8{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+.slide8 .image{
+    order: 2;
+    display: flex;
+    align-items: center;
+    width: 37%;
+    height: 100%;
+}
+.slide8 .test{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width:40%;
+    height: 100%;
+    }
+    .slide8 .test h1{
+font-size: 50px;
+    }
+    .slide8 .test select{
+    width: 80%;
+    height: 40px;
+    border-color: rgb(212, 5, 5);
+        }
+
+/*********************************************slide 9***********************/
+.slide9{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+.slide9 .image{
+    order: 1;
+    display: flex;
+    align-items: center;
+    width: 37%;
+    height: 100%;
+}
+.slide9 .test{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width:40%;
+    height: 100%;
+    }
+    .slide14 .test h1{
+        font-size: 35px;
+        font-family: "Poppins", sans-serif !important;
+                }
+        .slide14 .test h1:hover{
+            color: red;
+            zoom: 1.1;
+            }
+    .slide9 .test mat-radio-group{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    #siteOui{
+        background: #111D5Eff;
+padding: 15px 30px;
+border-radius: 10px;
+color: white;
+    }
+    #siteNon{
+        background: #111D5Eff;
+padding: 15px 30px;
+border-radius: 10px;
+color: white;
+    }
+/*********************************************slide 10***********************/
+.slide10{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+.slide10 .image{
+    order: 2;
+    display: flex;
+    align-items: center;
+    width: 37%;
+    height: 100%;
+}
+.slide10 .test{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width:40%;
+    height: 100%;
+    }
+    .slide10 .test h1{
+    font-size: 50px;
+    }
+    .slide10 .test mat-radio-group{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .slide10 .test .block{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .slide10 .test .block .sousBlock{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; 
+     }
+    .slide10 .test .block .sousBlock .qty{
+        order: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;            
+        }
+        
+.slide10 .test .block .sousBlock .qty input{
+    order: 2;
+    width: 80px;
+    height: 50px;
+    border: 4px solid rgb(212, 5, 5);
+    text-align: center;
+    }
+.slide10 .test .block .sousBlock  p{
+    order: 1;
+    margin: 0 5px 0 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+        }
+
+.slide10 .test .block .sousBlock .qty .qtyBtn{
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    }
+    .slide10 .test .block .sousBlock .qty .qtyBtn button{
+        border: none;
+        border-bottom: 1px solid white;
+        margin-bottom: 1px;
+        width: 5px;
+        border-radius: 0px;
+        height: 25px;
+        color: white;
+        background-color: rgb(212, 5, 5);
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        }
+    
+        
+/*********************************************slide 11 ***********************/
+    .slide11{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+    }
+    .slide11 .image{
+        align-items: center;
+        display: flex;
+        order: 1;
+        width: 37%;
+        height: 100%;
+    }
+    .slide11 .test{
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width:40%;
+        height: 100%;
+        }
+        .slide11 .test h1{
+    font-size: 50px;
+        }
+        .slide11 .test input{
+        width: 80%;
+        height: 40px;
+        border-color: rgb(212, 5, 5);
+            }
+
+      /*********************************************slide 12 ***********************/
+      .slide12{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+    .slide12 .image{
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        width:53%;
+        height: 100%;
+    }
+    .slide12 .image img{
+        order: 2;
+        height: 15%;
+        width: 55%;
+            }
+    .slide12 .image h1{
+        order: 1;
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 20px;
+            }
+
+
+    .slide12 .test{
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width:40%;
+        height: 100%;
+        }
+     
+        .slide12 .test select{
+        width: 80%;
+        height: 40px;
+        border-color: rgb(212, 5, 5);
+            }
+
+    
+/*********************************************slide 13 ***********************/
+.slide13{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.slide13 .image{
+    margin-left: 50px;
+    order: 1;
+    display: flex;
+    align-items:center;
+    width: 37%;
+    height: 100%;
+}
+.slide13 .test{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:40%;
+    height: 100%;
+    }
+    .slide3 .test h1{
+        font-size: 35px;
+        font-family: "Poppins", sans-serif !important;
+        }
+        .slide3 .test h1:hover{
+            color: red;
+            zoom: 1.1;
+            }
+    .slide13 .test input{
+    width: 80%;
+    height: 40px;
+    margin: 50px 0 50px 0;
+    border-color: rgb(212, 5, 5);
+        }
+
+
+/*********************************************slide 14***********************/
+.slide14{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+.slide14 .image{
+    order: 2;
+    display: flex;
+    align-items: center;
+    width: 37%;
+    height: 100%;
+}
+.slide14 .test{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width:40%;
+    height: 100%;
+    }
+    .slide14 .test h1{
+    font-size: 50px;
+    }
+    .slide14 .test mat-radio-group{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    /*********************************************slide 15 ***********************/
+    .slide15{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+    .slide15 .image{
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        width:53%;
+        height: 100%;
+    }
+    .slide15 .image p{
+        order: 2;
+    
+            }
+    .slide15 .image h1{
+        order: 1;
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 20px;
+            }
+
+
+
+    .slide15 .test{
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width:40%;
+        height: 100%;
+        }
+     
+        .slide15 .test select{
+        width: 80%;
+        height: 40px;
+        border-color: rgb(212, 5, 5);
+            }
+
+
+/*********************************************slide 16***********************/
+.slide16{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+.slide16 .image{
+    order: 2;
+    display: flex;
+    align-items: center;
+    width: 37%;
+    height: 100%;
+}
+.slide16 .test{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width:40%;
+    height: 100%;
+    }
+    .slide16 .test h1{
+    font-size: 50px;
+    }
+    .slide16 .test mat-radio-group{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+
+    
+    /*********************************************slide 17 ***********************/
+    .slide17{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+    .slide17 .image{
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        width:53%;
+        height: 100%;
+    }
+    .slide17 .image p{
+        order: 2;
+    
+            }
+    .slide17 .image h1{
+        order: 1;
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 20px;
+            }
+
+
+
+    .slide17 .test{
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width:40%;
+        height: 100%;
+        }
+     
+        .slide17 .test select{
+        width: 80%;
+        height: 40px;
+        border-color: rgb(212, 5, 5);
+            }
+
+
+           /*********************************************slide 18 ***********************/
+           .slide18{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+        }
+        .slide18 .image{
+            order: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            width:53%;
+            height: 100%;
+        }
+        .slide18 .image img{
+            order: 2;
+            height: 30%;
+            width: 15%;
+                }
+        .slide18 .image h1{
+            order: 2;
+            font-size: 50px;
+            text-align: center;
+            margin-bottom: 20px;
+                }
+
+
+        .slide18 .test{
+            order: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width:40%;
+            height: 100%;
+            }
+         
+            .slide18 .test select{
+            width: 80%;
+            height: 40px;
+            border-color: rgb(212, 5, 5);
+                }
+
+
+        
+/*********************************************slide 19 ***********************/
+    .slide19{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+    .slide19 .image{
+        margin-left: 50px;
+        display: flex;
+        align-items: center;
+        order: 1;
+        width: 37%;
+        height: 100%;
+    }
+    .slide19 .test{
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width:40%;
+        height: 100%;
+        }
+        .slide19 .test h1{
+    font-size: 50px;
+        }
+        .slide19 .test input{
+        width: 80%;
+        height: 40px;
+        border-color: rgb(212, 5, 5);
+            }
+
+
+            
+/*********************************************slide 20 ***********************/
+.slide20{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.slide20 .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 1;
+    width: 60%;
+    height: 80%;
+}
+.slide20 .image img{
+  height: 80%;
+  width: 40%;
+  filter: drop-shadow(0.4rem 0.4rem 0.45rem rgba(0, 0, 30, 0.5));
+}
+.slide20 .test{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width:60%;
+    height: 100%;
+    }
+    .slide20 .test h1{
+font-size: 50px;
+    }
+    .slide20 .test input{
+    width: 90%;
+    height: 40px;
+    border-color: rgb(212, 5, 5);
+        }
+
+    .slide20 .test .block1{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .slide20 .test .block2 {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .slide20 .test .block2 input{
+        width: 40%;
+    }
+    .slide20 .test .block2 label{
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+    .slide20 .test .block1 input{
+        width: 90%;
+    }
+    .slide20 .test .block1 label{
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+/*********************************************slide 21 ***********************/
+.slide21{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+}
+.slide21 .image{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    order: 1;
+    width: 22%;
+    height: 100%;
+}
+.slide21 .image img{
+  height: 70%;
+  width: 30%;
+}
+.slide21 .test{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    width:70%;
+    height: 80%;
+    }
+
+    .slide21 .test h1{
+        line-height: normal;
+       color: green;
+       font-size: 50px;
+        }
+        .slide21 .test img{
+          
+            font-size: 100px;
+            margin: 10px;
+                }
+    .slide21 .test p{
+        line-height: normal;
+        color: rgb(0, 0, 133);
+        font-size: 30px;
+            }
+    .slide21 .test .prix {
+        color: red;
+        line-height: normal;
+            }
+    .slide21 .test .faild{
+        color: red;
+        line-height: normal;
+        font-size: 60px;
+            }
+    .slide21 .test img{
+        width: 100px;
+            }
+
+
+
+.slide21 .nextIcon{
+    order: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 22%;
+    height: 90%;
+}
+.slide21 .nextIcon img{
+ color: green;
+ width: 80px;
+}
+
+   
+/*********************************************slide 24 ***********************/
+.slide24{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.slide24 .image{
+    margin-left: 50px;
+    order: 2;
+    display: flex;
+    align-items:flex-end;
+    width: 47%;
+    height: 100%;
+    margin-top: 10px;
+}
+.slide24 .test{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:40%;
+    height: 100%;
+    }
+    .slide24 .test h1{
+    font-size: 50px;
+    text-align: center;
+    }
+    .slide24 .test input{
+    width: 80%;
+    height: 40px;
+    margin: 50px 0 50px 0;
+    border-color: rgb(212, 5, 5);
+        }
+    .slide24 .test mat-radio-group{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       align-items: flex-start;
+       width: 100%;
+
+            }
+    .slide24 .test .calend{
+        width: 450px;
+        height: 450px;
+    }
+
+    
+/*********************************************slide 25 ***********************/
+.slide25{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.slide25 .image{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    order: 1;
+    width: 22%;
+    height: 20%;
+}
+
+.slide25 .test{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    width:70%;
+    height: 80%;
+    }
+
+.slide25 .test img{
+    width: 50px;
+        }
+.slide25 .test p{
+    color: rgb(0, 0, 133);
+    font-size: 40px;
+}
+
+.slide25 .nextIcon{
+    order: 3;
+}
+.slide25 .nextIcon p{
+    text-align: center;
+}
+.slide25 .nextIcon .socialMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   }
+.slide25 .nextIcon .socialMedia img{
+ width: 60px;
+}
+
+           
+/*********************************************slide 26 ***********************/
+.slide26{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.slide26 .image{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width:53%;
+    height: 100%;
+}
+.slide26 .image img{
+    order: 2;
+    height: 100%;
+    width: 69%;
+        }
+.slide26 .image h1{
+    order: 2;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+        }
+
+.slide26 .test{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width:60%;
+    height: 100%;
+    }
+    .slide26 .test h1{
+        font-size: 35px;
+        font-family: "Poppins", sans-serif !important;
+    }
+        .slide26 .test h1:hover{
+            color: red;
+            zoom: 1.1;
+            }
+    .slide26 .test input{
+    width: 90%;
+    height: 40px;
+    border-color: rgb(212, 5, 5);
+        }
+
+    .slide26 .test .block1{
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 90%;
+    }
+    .slide26 .test .block2 {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .slide26 .test .block2 mat-radio-group  {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 75%;
+    }
+
+    
+    .slide26 .test .block1 input{
+        width: 90%;
+    }
+    .slide26 .test .block1 label{
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+ /*********************************************slide 27 ***********************/
+ .slide27{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.slide27 .image{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width:53%;
+    height: 100%;
+}
+
+
+
+
+.slide27 .test{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width:40%;
+    height: 100%;
+    
+    }
+    .slide27 .test .bSearch{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+    .slide27 .test .bSearch .search {
+        margin-bottom: 15px;
+        margin-left: 15px;
+        width: 50%;
+        border-radius: 50px;
+        background-color: rgb(134, 134, 134);
+        color:white;
+      }
+      .slide27 .test .bSearch i {
+        margin-left: -29px;
+        color: white;
+      }
+      
+      .slide27 .test .list-item {  
+
+border: 3px solid rgb(255, 0, 0);
+border-radius: 4px;
+color: rgb(153, 153, 153);
+line-height: 90px;
+font-weight: 400;
+background-color: rgb(255, 255, 255);
+width: 88%;
+}
+  
+  .slide27 .test .item-content {
+    height: 100%;
+    border: none;
+    color: rgb(153, 153, 153);
+    line-height: 45px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0,0,0,0.2) 0px 1px 2px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  
+   
+  .slide27 .test .item-content .block1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+  }
+
+  .slide27 .test .item-content .block2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: -moz-available;
+    }
+  
+    .slide27 .test .item-content .block2 p{
+        margin-top: 0;
+        margin-bottom: 1rem;
+        height: 29px;
+        }
+  
+  .slide27 .test .item-content .block3{
+    display: inline;
+    flex-direction: column;
+    width: 10%;
+  }
+  .slide27 .test .item-content .block3 input{
+    width: 100%;
+  }
+  .slide27 .test .item-content:hover{
+    background-color: rgb(218, 98, 98);
+  }
+  .slide27 .test .item-content:hover p{
+    color: white;
+    }
+    .slide27 .test .item-content:hover input{
+        color: white;
+    }
+    .slide27 .test .item-content:hover i{
+        color: white;
+    }
+ 
+      
+      .slide27 .test .contentTab{
+          width: 100%;
+          height: 500px;
+          overflow-y: scroll;
+      }
+  
+
+
+
+
+/*****************************************responsive css *************************************************/
+@media screen and (max-width: 768px) {
+   
+    .body{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .left{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .left img{
+        width: 60px;
+    }
+    .point{
+        text-align: center;
+        font-size: 7px;
+    }
+     .center{
+      width: 90%;
+      margin-left: 20px;  
+     }
+    .center .listP{
+   text-align: center;
+    }
+    
+    /*********************************************slide 0 ***********************/
+.slide0{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center ;
+    height: 100%;
+}
+.slide0 .image{
+    order: 2;
+    width: 80%;
+    height: 100%;
+  }
+
+.slide0 .test{
+   width:100%;
+   }
+
+.slide0 .test h1{
+    font-size: 30px;
+   }
+
+
+/*********************************************slide 1 ***********************/
+.slide1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.slide1 .image{
+  order: 2;
+  width: 90%;
+  height: 100%;
+}
+
+.slide1 .test{
+width: 100%;
+}
+.slide1 .test h1{
+    font-size: 30px;
+    }
+
+  /*********************************************slide 2 ***********************/
+  .slide2{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    width: 100%;
+    height: 100%;
+}
+.slide2 .image{
+  order: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+}
+.slide2 .test{
+    order: 1;
+    display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   width:100%;
+   height: 100%;
+   }
+   .slide2 .test h1{
+    font-size: 30px;
+    text-align: center;
+   }
+ 
+  /*********************************************slide 3 ***********************/
+  .slide3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.slide3 .image{
+    order: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.slide3 .test{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    height: 100%;
+    }
+    .slide3 .test h1{
+    font-size: 30px;
+    text-align: center;
+    }
+ 
+
+/*********************************************slide 4 ***********************/
+.slide4{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.slide4 .image{
+    order: 2;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+}
+.slide4 .test{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    height: 100%;
+    }
+    .slide4 .test h1{
+    font-size: 30px;
+    text-align: center;
+    }
+
+    
+     /*********************************************slide 5 ***********************/
+     .slide5{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+    }
+    .slide5 .image{
+        order: 2;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+     
+    }
+    .slide5 .test{
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width:100%;
+        height: 100%;
+        }
+        .slide5 .test h1{
+        font-size: 30px;
+        text-align: center;
+        margin-block: auto;
+        }
+        .slide5 .test .blockBtn{
+
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+            width: 100%;
+            height: 20%;
+        }
+        .slide5 .test .blockBtn .sousBlock{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            width: 75%;
+         }
+    
+         .slide5 .test .blockBtn .sousBlock .qty{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;  
+            margin: 10px;          
+            }
+            
+    .slide5 .test .blockBtn .sousBlock .qty input{
+        order: 2;
+        width: 80px;
+        height: 50.5px;
+        border: 4px solid rgb(212, 5, 5);
+        text-align: center;
+        }
+   
+ /*********************************************slide 6 ***********************/
+ .slide6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.slide6 .image{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    height: 100%;
+}
+.slide6 .image img{
+    order: 2;
+    height: 15%;
+    width: 15%;
+        }
+.slide6 .image h1{
+    order: 1;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+        }
+
+
+.slide6 .test{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width:100%;
+    height: 100%;
+    }
+
+    
+/*********************************************slide 7 ***********************/
+.slide7{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.slide7 .colum1{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.slide7 .colum2{
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+}
+.slide7 .image{
+    order: 2;
+    width: 90%;
+    height: 100%;
+}
+.slide7 .test{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width:100%;
+    height: 100%;
+    margin-top: 20px;
+    }
+    .slide7 .test h1{
+    font-size: 30px;
+    text-align: center;
+    }
+    .slide7 .test input{
+    width: 80%;
+    height: 20px;
+    border-color: rgb(212, 5, 5);
+        }
+    .slide7 .progress{
+    order: 3;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    background: rgb(255, 255, 255);
+    outline: none;
+    border: 5px solid rgb(189, 8, 8);
+    border-radius: 8px;
+  }
+  
+  
+  /* for chrome/safari */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 40px;
+    background: rgb(248, 224, 5);
+    cursor: pointer;
+    border: 5px solid rgb(248, 224, 5);
+    border-radius: 30px;
+  }
+  
+  /* for firefox */
+  .slider::-moz-range-thumb {
+    width: 10px;
+    height: 30px;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    border: 5px solid rgb(189, 8, 8);
+    border-radius: 4px;
+  }
+.__range{
+    width: 80%;
+    height: 100%;
+}
+.__range-step{
+	position: relative;                
+}
+.__range-step{
+	position: relative;                
+}
+
+.__range-max{
+	float: right;
+}
+           
+
+
+.__range input::range-progress {	background: rgb(189, 8, 8);
+}
+.slider input[type=range]::-moz-range-progress {
+    background-color: #c657a0;
+  }
+.__range-step datalist {
+	position:relative;
+	display: flex;
+	justify-content: space-between;
+	height: auto;
+	bottom: 6px;
+	/* disable text selection */
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */                
+	user-select: none; /* Standard */
+	/* disable click events */
+	pointer-events:none;  
+}
+.__range-step datalist option {
+	width: 10px;
+	height: 10px;
+	min-height: 10px;
+	border-radius: 100px;
+	/* hide text */
+	white-space: nowrap;       
+  padding:0;
+  line-height: 40px;
+}
+
+
+/*********************************************slide 8 ***********************/
+.slide8{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.slide8 .image{
+    order: 2;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+}
+.slide8 .test{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    height: 100%;
+    }
+    .slide8 .test h1{
+    font-size: 30px;
+    text-align: center;
+    }
+
+    /*********************************************slide 9***********************/
+.slide9{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 750px;
+}
+.slide9 .image{
+    order: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+}
+.slide9 .test{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    height: 100%;
+    }
+    .slide9 .test h1{
+    font-size: 30px;
+    text-align: center;
+    }
+    .slide9 .test mat-radio-group{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+
+/*********************************************slide 10***********************/
+.slide10{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 750px;
+}
+.slide10 .image{
+    order: 2;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.slide10 .test{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100%;
+    }
+    .slide10 .test h1{
+    font-size: 30px;
+    text-align: center;
+    }
+    .slide10 .test .block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .slide10 .test .block .sousBlock{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; 
+        margin-top: 10px;
+     }
+  
+     
+        
+/*********************************************slide 11 ***********************/
+.slide11{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 750px;
+}
+.slide11 .image{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    order: 2;
+    width: 100%;
+    height: 100%;
+}
+.slide11 .test{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    height: 100%;
+    }
+    .slide11 .test h1{
+    font-size: 30px;
+    text-align: center;
+    }
+
+  /*********************************************slide 12 ***********************/
+  .slide12{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 100%;
+    height: 700px;
+}
+.slide12 .image{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    width:100%;
+    height: 100%;
+}
+.slide12 .image h1{
+    order: 1;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+        }
+
+
+.slide12 .test{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100%;
+    }
+ 
+
+/*********************************************slide 13 ***********************/
+.slide13{
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 100%;
+height: 750px;
+}
+.slide13 .image{
+order: 2;
+width: 80%;
+height: 100%;
+}
+.slide13 .test{
+order: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width:100%;
+height: 100%;
+}
+.slide13 .test h1{
+font-size: 30px;
+text-align: center;
+}
+
+/*********************************************slide 14***********************/
+.slide14{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 100%;
+height: 750px;
+}
+.slide14 .image{
+order: 2;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+width: 100%;
+height: 100%;
+}
+.slide14 .test{
+order: 1;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+width:100%;
+height: 100%;
+}
+.slide14 .test h1{
+font-size: 30px;
+text-align: center;
+}
+/*********************************************slide 15 ***********************/
+.slide15{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height:750px;
+}
+.slide15 .image{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    height: 100%;
+}
+.slide15 .image p{
+    order: 2;
+
+        }
+.slide15 .image h1{
+    order: 1;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+        }
+
+
+
+.slide15 .test{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    width:100%;
+    height: 100%;
+    }
+ 
+
+
+/*********************************************slide 16***********************/
+.slide16{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 100%;
+height: 750px;
+}
+.slide16 .image{
+order: 2;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+width: 100%;
+height: 100%;
+}
+.slide16 .test{
+order: 1;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+width:100%;
+height: 100%;
+}
+.slide16 .test h1{
+font-size: 30px;
+text-align: center;
+}
+
+/*********************************************slide 17 ***********************/
+.slide17{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height:750px;
+}
+.slide17 .image{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    height: 100%;
+}
+.slide17 .image h1{
+    order: 1;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+        }
+
+.slide17 .test{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width:100%;
+    height: 100%;
+    }
+ 
+       /*********************************************slide 18 ***********************/
+       .slide18{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    .slide18 .image{
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        width:100%;
+        height: 100%;
+    }
+    .slide18 .image img{
+        order: 2;
+        height: 20%;
+        width: 15%;
+            }
+    .slide18 .image h1{
+        order: 2;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+            }
+
+    .slide18 .test{
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start ;
+        align-items: center;
+        width:100%;
+        height: 100%;
+        }
+     
+    
+/*********************************************slide 19 ***********************/
+.slide19{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.slide19 .image{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 2;
+    width: 90%;
+    height: 100%;
+}
+.slide19 .test{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    height: 100%;
+    }
+    .slide19 .test h1{
+    font-size: 30px;
+    text-align: center;
+    }
+
+        
+/*********************************************slide 20 ***********************/
+.slide20{
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 100%;
+height: 100%;
+}
+.slide20 .image{
+display: flex;
+align-items: center;
+justify-content: center;
+order: 1;
+width: 100%;
+height: 80%;
+}
+.slide20 .image img{
+height: 60%;
+width: 40%;
+filter: drop-shadow(0.4rem 0.4rem 0.45rem rgba(0, 0, 30, 0.5));
+}
+.slide20 .test{
+order: 2;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+width:100%;
+height: 100%;
+}
+.slide20 .test h1{
+font-size: 30px;
+text-align: center;
+}
+.slide20 .test .block1{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+.slide20 .test .block2 {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    }
+
+.slide20 .test .block2 label{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+/*********************************************slide 21 ***********************/
+.slide21{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100%;
+}
+.slide21 .image{
+display:none;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+order: 1;
+width: 100%;
+height: 10%;
+}
+.slide21 .test{
+order: 1;
+display: flex;
+flex-direction: column;
+justify-content:center;
+align-items: center;
+width:80%;
+height: 80%;    
+}
+
+.slide21 .test h1{
+    line-height: normal;
+   color: green;
+   font-size: 30px;
+   text-align: center;
+    }
+    .slide21 .test img{
+        line-height: normal;
+        font-size: 80px;
+        margin: 10px;
+            }
+.slide21 .test p{
+    line-height: normal;
+    color: rgb(0, 0, 133);
+    font-size: 30px;
+    text-align: center;
+        }
+.slide21 .test .prix {
+    color: red;
+        }
+.slide21 .test .faild{
+    line-height: normal;
+    width: 360px;
+    color: red;
+    font-size: 30px;
+    text-align: center;
+        }
+.slide21 .test img{
+    width: 80px;
+        }
+
+.slide21 .nextIcon{
+    order: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width:97%;
+    height: 15%;
+}
+.slide21 .nextIcon img{
+    color: green;
+    width: 80px;
+}
+        
+
+
+/*********************************************slide 24 ***********************/
+.slide24{
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 100%;
+height: 100%;
+}
+.slide24 .image{
+margin-left: 50px;
+order: 2;
+display: flex;
+align-items:flex-end;
+width: 88%;
+height: 100%;
+}
+.slide24 .test{
+order: 1;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+width:100%;
+height: 100%;
+margin-top: 20px;
+}
+.slide24 .test h1{
+font-size: 30px;
+text-align: center;
+}
+.slide24 .test input{
+width: 80%;
+height: 40px;
+margin: 50px 0 50px 0;
+border-color: rgb(212, 5, 5);
+    }
+.slide24 .test mat-radio-group{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: flex-start;
+   width: 100%;
+   margin-top: 20px;
+
+        }
+.slide24 .test .calend{
+    width: 350px;
+    height: 350px;
+}
+
+
+/*********************************************slide 25 ***********************/
+.slide25{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100%;
+}
+.slide25 .image{
+display: flex;
+align-items: flex-end;
+justify-content: flex-end;
+order: 1;
+width: 22%;
+height: 20%;
+}
+
+.slide25 .test{
+order: 2;
+display: flex;
+flex-direction: column;
+justify-content:flex-start;
+align-items: center;
+width:100%;
+height: 80%;
+}
+
+.slide25 .test img{
+width: 50px;
+margin-bottom: 30px;
+    }
+.slide25 .test p{
+    text-align: center;
+color: rgb(0, 0, 133);
+font-size: 30px;
+line-height: normal;
+}
+
+.slide25 .nextIcon{
+order: 3;
+}
+.slide25 .nextIcon p{
+text-align: center;
+line-height: normal;
+}
+.slide25 .nextIcon .socialMedia {
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+.slide25 .nextIcon .socialMedia img{
+width: 60px;
+}
+
+          
+/*********************************************slide 26 ***********************/
+.slide26{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.slide26 .image{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width:53%;
+    height: 100%;
+}
+.slide26 .image img{
+    order: 2;
+    height: 20%;
+    width: 15%;
+        }
+.slide26 .image h1{
+    order: 2;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+        }
+
+.slide26 .test{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width:100%;
+    height: 100%;
+    }
+    .slide26 .test h1{
+     font-size: 50px;
+    }
+    .slide26 .test input{
+    width: 90%;
+    height: 40px;
+    border-color: rgb(212, 5, 5);
+    margin-left: 5px;
+        }
+
+    .slide26 .test .block1{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 90%;
+    }
+    .slide26 .test .block2 {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .slide26 .test .block2 mat-radio-group  {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 90%;
+    }
+
+    
+    .slide26 .test .block1 input{
+        width: 90%;
+    }
+    .slide26 .test .block1 label{
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+
+    }
+
+ 

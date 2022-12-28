@@ -1,0 +1,35 @@
+
+    h1{
+      font-weight: bold;
+      margin: 50px 0 50px 0;
+      color: #111d5e;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height:200px;
+
+    }
+
+    .subvention_container{
+      background-color: #EBECF0;
+      margin-bottom: -46px !important;
+  }
+
+   /*****************************************responsive css *************************************************/
+   @media screen and (max-width:  992px) {
+    h1{
+      font-weight: bold;
+      margin: 50px 0 50px 0;
+      color: #111d5e;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height:100px;
+
+    }
+
+}

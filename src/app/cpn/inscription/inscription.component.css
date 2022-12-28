@@ -1,0 +1,83 @@
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2em + .75rem + 2px);
+    padding: 1.375rem 1.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    box-shadow: 3px 3px 3px 3px rgb(0 0 0 / 10%);
+    margin: 11px;
+}
+
+.register_container{
+    background-color: #EBECF0;
+}
+
+.listradio{
+    display: flex;
+flex-direction: row;
+width: -moz-available;
+justify-content: space-between;
+align-items: center;
+height: inherit;
+}
+.radio{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        float: initial;
+        width: 200px;
+        
+}
+.listinput{
+    display: flex;
+flex-direction: column;
+width: 90%;
+justify-content: center;
+align-items: center;
+margin: auto;
+}
+
+
+.register_container .register_content .register_wrapper .row{
+    margin-top:0;
+    margin-right: 0;
+    margin-left: 0;
+}
+.container{
+    margin-bottom: 30px;
+}
+
+  /* Extra Small Devices, Phones */
+  @media only screen and (min-width : 329px) and (max-width : 510px)  {
+    .register_container .register_content .register_wrapper .row{
+        margin-top:0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .listradio{
+        display: flex;
+    flex-direction: inherit;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin: 10px;
+    height: auto;
+
+    }
+
+    .radio{
+        margin: auto;
+    }
+    
+
+}

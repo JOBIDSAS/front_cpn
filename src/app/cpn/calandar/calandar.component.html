@@ -1,0 +1,45 @@
+
+
+  <div class="agenda_container" >
+    <div class="agenda_wrapper">
+      <div class="block">
+        <div class="block-left">
+          <mat-calendar [(selected)]="selected"></mat-calendar>
+          </div>
+        <div class="block-right">
+             <h1>{{ currentDate  | uppercase }} </h1>
+
+            
+                <div class="form">
+                  <h2 style="color: #ffffff;">Ajouter Rendez-Vous</h2>
+              <form  [formGroup]="eventForm" (ngSubmit)="RegisterEvent()">
+                <div class="row mb-3 g-4 listinput" style="flex: 2;">
+                  <div class="col-md-12">
+                    <input type="text" class="form-control" formControlName="title"  placeholder="titre">
+                  </div>                    <div class="col-md-12">
+                    <input type="datetime-local" class="form-control" formControlName="date"  placeholder="date">
+                  </div>
+                    <div class="col-md-12">
+                        <input type="number" class="form-control" formControlName="phone"  placeholder="telephone">
+                      </div>
+                        <div class="row">
+                      <div class="col-12 form">
+                        <button style="width: 100%;margin-top: 10px;border: none;background: rgb(255, 255, 255);border-radius: 25px;color: rgb(253, 21, 21);" type="submit" class="btn btn-danger" [disabled]="eventForm.invalid">envoyer</button>
+                      </div>
+                      </div>
+                  </div>       
+                  </form>
+                </div>
+             <mat-list>
+             
+             </mat-list>
+        </div>
+      
+      </div>
+      </div>
+  </div>
+
+
+
+
+  

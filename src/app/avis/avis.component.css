@@ -1,0 +1,381 @@
+body
+{
+    background: #fbf3ff;
+}
+.logo{
+    width: 66px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: fixed;
+    top: 547px;
+    left: 549px;;
+}
+
+.form-check {
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 2em;
+    margin-bottom: 0.125rem;
+}
+
+.background{
+    position: absolute;
+    width: 76%;
+    height: 65%;
+    z-index: 1;
+    opacity: 1px;
+    opacity: 0.13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    left: 74px;
+    top: 97px;
+}
+.container
+{
+    position: absolute;
+    max-width: 800px;
+    height: 618px;
+    margin: auto;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+}
+
+.myRightCtn
+{
+    position: relative;
+    background-image: linear-gradient(45deg, #6246ff, #111D5E );
+    border-radius: 25px;
+    height: 100%;
+    padding: 25px;
+    color: rgb(192, 192, 192);
+    font-size: 12px;
+    display: flex;
+  justify-content: center;
+  align-items: initial;
+
+}
+.logo1{
+    width: 55%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+top: 25px;
+position: absolute;
+left: 20px;
+}
+
+.circle{
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: #111D5E;
+    margin-right: 10px;
+}
+
+.myRightCtn header
+{
+    color: #ffffff;
+    margin-bottom: 50px;
+    text-align: initial;
+    height: 86px;
+}
+
+.myRightCtn header h1
+{
+    color: #ffffff;
+   
+}
+
+.myLeftCtn
+{
+   position: relative;
+    background: #fff;
+    border-radius: 25px;
+    height: 100%;
+    padding: 25px;
+    padding-left: 50px;
+}
+.myLeftCtn header
+{
+    color: #696969;
+    margin-bottom: 50px;
+    height: 94px;
+    text-align: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.myLeftCtn header h1
+{
+    color: #111D5E;
+   
+}
+
+.row
+{
+    height: 100%;
+ 
+}
+
+.myCard
+{
+    position: relative;
+    background: #fff;
+    height: 100%;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 10px 40px -10px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 10px 40px -10px rgba(0,0,0,0.7);
+    box-shadow: 0px 10px 40px -10px rgba(0,0,0,0.7);
+    width: 159%;
+
+}
+
+
+.box
+{
+    position: relative;
+    margin: 20px;
+    margin-bottom: 100px;
+   
+}
+
+.end{
+   margin-bottom: 3rem;
+   text-align: left;
+   margin-left: 15px;
+}
+
+.block{
+    display: flex;
+    flex-direction: row;
+    justify-content: initial; 
+    margin-bottom: 25px;
+}
+
+.myLeftCtn .myInput
+{
+    width: 236px;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 50px;
+    border: none;
+    -webkit-box-shadow: 0px 10px 49px -14px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 10px 49px -14px rgba(0,0,0,0.7);
+    box-shadow: 0px 10px 49px -14px rgba(0,0,0,0.7);
+}
+
+.myLeftCtn .myInput:focus
+{
+    outline: none;
+}
+
+.myForm
+{
+    position: relative;
+    margin-top: 5px;
+    height: 20%;
+    width: 100%;
+    z-index: 1;
+}
+.myRightCtn .radio{
+    display: flex;
+justify-content: space-evenly;
+flex-direction: row;
+}
+
+.myRightCtn .form-group{
+    margin-bottom: 1rem;
+text-align: initial;
+width: fit-content;
+}
+
+
+
+.myRightCtn .myInput
+{
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 50px;
+    border: none;
+    -webkit-box-shadow: 0px 10px 49px -14px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 10px 49px -14px rgba(0,0,0,0.7);
+    box-shadow: 0px 10px 49px -14px rgba(0,0,0,0.7);
+}
+
+.myRightCtn .myInput:focus
+{
+    outline: none;
+}
+
+.myLeftCtn .butt
+{
+    background:  linear-gradient(45deg, #fd3636, #e80000 );
+    color: #fff;
+    width: 230px;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 10px 41px -11px rgba(0,0,0,0.7);
+-moz-box-shadow: 0px 10px 41px -11px rgba(0,0,0,0.7);
+box-shadow: 0px 10px 41px -11px rgba(0,0,0,0.7);
+}
+
+.myLeftCtn .butt:hover
+{
+    background:  linear-gradient(45deg, #ff5b5b, #ff2626 );
+
+}
+
+.myLeftCtn .butt:focus
+{
+    outline: none;
+}
+
+.myRightCtn label{
+    margin-bottom: 8px;
+}
+
+.myLeftCtn .fas
+{
+    position: relative;
+    color: #111D5E;
+    left: 36px;
+}
+
+.butt_out
+{
+    background:  transparent;
+    color: #fff;
+    width: 120px;
+    border: 2px solid#fff;
+    border-radius: 25px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 10px 49px -14px rgba(0,0,0,0.7);
+-moz-box-shadow: 0px 10px 49px -14px rgba(0,0,0,0.7);
+box-shadow: 0px 10px 49px -14px rgba(0,0,0,0.7);
+}
+
+.butt_out:hover
+{
+    border: 2px solid#eecbff;
+}
+
+
+.butt_out:focus
+{
+    outline: none;
+}
+
+.myRightCtn .end
+{
+    margin-top: 26px;    
+}
+/*****************************rating****************/
+
+.rating {
+    position: relative;
+    width: 180px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3em;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 2px #b3acac;
+ }
+ 
+ .rating__result {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-10px) translateX(-5px);
+    z-index: -9;
+    font: 3em Arial, Helvetica, sans-serif;
+    color: #ebebeb8e;
+    pointer-events: none;
+ }
+ 
+ .rating__star {
+    font-size: 1.3em;
+    cursor: pointer;
+    color: #dabd18b2;
+    transition: filter linear .3s;
+ }
+ 
+ .rating__star:hover {
+    filter: drop-shadow(1px 1px 4px gold);
+ }
+
+.starActive{
+    color: gold;
+    
+}
+
+/*********************/
+
+.rate {
+    float: left;
+    height: 38px;
+    padding: 0 10px;
+    position: relative;
+    width: 180px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* gap: .3em;*/
+    padding: 5px;
+      padding-bottom: 5px;
+      flex-flow: row-reverse;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 2px #b3acac;
+    padding-bottom: 0px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */

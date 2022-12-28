@@ -1,0 +1,308 @@
+
+
+
+<!--************************************home ****************************************************** -->
+<div  class="primary_body mb-5">
+  <div class="home_container">
+    <section class="section_heading mb-3">
+      <div class="heading_wrapper container-fluid g-0">
+          <div class="row g-0">
+              <div class="col-md-8 col-12">
+                  <div class="row g-0 justify-content-center">
+                      <div class="col-auto">
+                          <div class="img_wrapper content">
+                                      <img class="heading_img" [defaultImage]="'assets/cpnimages/home/33.png'" 
+                                      [lazyLoad]="'assets/cpnimages/home/33.png'"  alt="">
+                          </div>
+
+                      </div>
+
+                  </div>
+
+              </div>
+
+              <div class="col-md-4 p-3 block0">
+                  <div class="row g-0 justify-content-start">
+                      <div class="col-md-auto transtion" >
+                                  <h2 class="title_heading">Transition Numérique</h2>
+                                  <h4 class="desc_heading">2021</h4>
+                                  <div class="search_bloc">
+                                      <form class="search">
+                                          <input class="search__input" placeholder="Quel type de subvention souhaitez vous"
+                                          >
+                                      </form>
+                                  </div>
+                      </div>
+                  </div>
+
+                  <div class="carre">
+                      <div class="row">
+                          <div class="col" style="display: initial;flex-direction: row;padding: 8px;text-align: start;">
+                              <img src="assets/cpnimages/home/I.png" style="width: 10%; margin: 0 0 0 20px;" alt="">
+                              <span style="margin-left: 4px;font-size: 13px;">Followers</span>
+                              <h4 style="text-align: center; margin: 0 90px 0 0;">{{ follow }}K</h4>
+                              <p style="text-align: center;font-size: 12px;margin: 0 0px 0 -45px;"><a style="color:#00FF00;">2.1%</a>vs last 7 days</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="our_success mb-3">
+    <div class="success_wrapper container px-4 g-0">
+        <div class="row g-0">
+
+            <div class="col-md-6 py-2 title">
+                <h5 class="success_txt">Notre succés</h5>
+                <h3 class="success_desc">Peut importe votre secteur d'acitivité nous vous offrons une
+                    subvention</h3>
+            </div>
+            <div class="col-md-6 py-2 chiffre">
+                <ul class="success_list">
+                    <li class="success_item">
+                        <h3 class="k"><span class="item_num">562</span>K</h3>
+                        <p class="item_desc">Entreprises</p>
+                    </li>
+                    <li class="success_item">
+                        <h3 class="k"><span class="item_num">10</span>K</h3>
+                        <p class="item_desc">Subventions</p>
+                    </li>
+                    <li class="success_item">
+                        <h3 class="k"><span class="item_num">200</span>K+ </h3>
+                        <p class="item_desc">Adhérants</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+    <section class="card-blog mb-5">
+      <div class="card_wrapper container px-4 g-0">
+          <div class="row py-3 ">
+              <div class="col-md-4">
+                  <div  class="card d-flex flex-column align-items-center justify-content-center block2">
+                      <img style="height:50%;width:50%" src="assets/cpnimages/home/agent.png" class="card-img-top" alt="...">
+                      <div class="card-body py-0 d-flex flex-column justify-content-center align-items-center">
+                          <h5 class="card-title home">Subvention immédiate</h5>
+                          <p class="card-text home">Besoin d'un chèque Numérique</p>
+                      </div>
+                      <div class="card-footer py-0">
+                          <a [routerLink]="'/test'" class="test-btn1 btn btn-light">Testez Votre éligibilité</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div  class="card d-flex flex-column align-items-center justify-content-center block2">
+                      <img style="height:50%;width:50%" src="assets/cpnimages/home/casque.png" class="card-img-top" alt="...">
+                      <div class="card-body py-0 d-flex flex-column justify-content-center align-items-center">
+                          <h5 class="card-title home"  >Accompagnement</h5>
+                          <p class="card-text home" style="text-align:center">Des Experts à votre disposition pour digitaliser votre entreprise</p>
+                      </div>
+                      <div class="card-footer py-0">
+                          <a href="#"  class="test-btn2 btn  btn-light">En savoir
+                              plus</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div  class="card d-flex flex-column align-items-center justify-content-center block2">
+                      <img style="height:50%;width:50%" src="assets/cpnimages/home/money.png" class="card-img-top" alt="...">
+                      <div class="card-body py-0 d-flex flex-column justify-content-center align-items-center">
+                          <h5 class="card-title home">Financement</h5>
+                          <p class="card-text home" style="text-align:center">Obtenez le immédiatement sur votre devis ou facture</p>
+                      </div>
+                      <div class="card-footer py-0">
+                          <a href="#" class="test-btn3 btn btn-light">En savoir
+                              plus</a>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </section>
+
+  <section class="text-bloc g-0 mb-5 block3" >
+    <div class="container px-4">
+        <ul  class="text_body">
+            <li class="text_content"></li>
+            <h1> Conseils et Accompagnement</h1>
+        </ul>
+        <p >Le CPN est un acteur majeur dans la transition digital des entreprises
+            nous subventionnons
+            et accompagnons tous type de projet de développement informatique nous vous orientons au-près
+            d’agence de développement vérifier et désigné.</p>
+
+    </div>
+</section>
+
+<section class="divider g-0 mb-5">
+  <div class="container px-4">
+      <span class="divider_ligne"></span>
+  </div>
+</section>
+
+
+
+<section class="block4">
+
+  <div class="container px-4 block1">
+      <h1>Facilité & Rapidité</h1>
+      <p >
+          Tous les services du CPN Aide aux entreprises sont destinée aux petites et moyennes entreprises
+          et Start-up.
+      </p>
+
+      <p >Nous faisons un suivie et donnons accès a notre réseau de
+          partenaires et d’entreprise pour favorisé leurs croissance.
+      </p>
+  </div>
+  <div class="wavy"></div>
+  <div  class="outer-div one">
+      <div class="inner-div">
+          <div class="front">
+              <div class="front__face-photo1"><img style="width: 100%;" src="assets/cpnimages/home/icone-2.png" alt=""></div>
+              <div class="front__text">
+                  <h3 class="front__text-header">Agence</h3>
+                  <p class="front__text-para">Grace au Cpn Soyez accompagné au prés d'agence garentie et
+                      referencé</p>
+
+              </div>
+          </div>
+
+
+      </div>
+  </div>
+  <div  class="outer-div two">
+      <div class="inner-div">
+          <div class="front">
+              <div class="front__face-photo2"><img style="width: 100%;" src="assets/cpnimages/home/icone-1.png" alt=""></div>
+              <div class="front__text">
+                  <h3 class="front__text-header">Transformation <br> digitale</h3>
+                  <p class="front__text-para">Grace au Cpn Soyez accompagné au prés d'agence garentie et
+                      referencé</p>
+
+              </div>
+          </div>
+
+
+      </div>
+  </div>
+  <div  class="outer-div three">
+      <div class="inner-div">
+          <div class="front">
+              <div class="front__face-photo3"> <img style="width: 100%;" src="assets/cpnimages/home/icone-3.png" alt="">
+              </div>
+              <div class="front__text">
+                  <h3 class="front__text-header">Financement <br> Imédiat</h3>
+                  <p class="front__text-para">Grace au Cpn Soyez accompagné au prés d'agence garentie et
+                      referencé</p>
+
+              </div>
+          </div>
+
+      </div>
+  </div>
+</section>
+
+
+<section class="third-bloc g-0 mb-5">
+  <div class="container px-4 text-center">
+    <h1 style="color: #111d5e">Pour obtenir votre subvention</h1>
+    <p style="color: gray" class="subvention-text text-center">
+      Le CPN s'engage à vous mettre en relation avec une agence. <br>
+      Le cabinet vous permet d'obtenir une subvention sur votre <br>
+      développement informatique, et vous met a disposition également <br>
+      sont réseaux d'entreprises et de partenaire international.
+    </p>
+  </div>
+
+  <div class="col-6 block5">
+    <img src="assets/cpnimages/home/old.PNG"  alt="...">
+     </div>
+
+  <div class="col-6 block6">
+    <div class="third-bloc-border">
+      <h3>Economiser</h3>
+      <p>nos subventions sont calculées par rapport à votre investissement quel que soit le poids de votre projet digital. Nos aides varient de 1000 à 10 000 euro de subvention immédiate.</p>
+    </div>
+    <div class="third-bloc-border">
+      <h3>Gagner du temps</h3>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and
+        typesetting industry. Lorem Ipsum has been the
+        industry's
+      </p>
+    </div>
+    <div class="third-bloc-border">
+      <h3>Service de qualité</h3>
+      <p>Tous nos conseillers détiennent un domaine d’expertise qui leurs est propre et pourront vous accompagner dans la réalisation de vos projets.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="block7">
+  <div class="container px-4 lastB">
+    <div class="text-center">
+      <h1 style="color: #111d5e">Avis D'entreprises</h1>
+      <p style="color: gray" class="subvention-text text-center">
+        Ils nous ont fait confiance , ont été accompagnés par le CPN et ont réussi à avoir leur <br>
+        subventions
+      </p>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center ">
+      <div class="col-md-3 card1">
+        <div class="card h-100 box1">
+          <div class="card-body">
+
+            <p class="card-text">"J’ai été accompagné par le CPN et j’ai eu ma subvention, excellent service."</p>
+            <h4>Justin Rhodes</h4>
+            <h6>Marketing officer</h6>
+          </div>
+        </div>
+        <div class="image">
+          <img src="assets/cpnimages/home/avis3.png" class="img-fluid"alt=" avis 1">
+        </div>
+      </div>
+      <div class="col-md-3 card2">
+        <div class="card h-100 box2">
+          <div class="card-body">
+
+            <p class="card-text">"Rapidité, efficacité et un très bon service client, le CPN m’a aidé à numériser mon entreprise."</p>
+            <h4>Justin Rhodes</h4>
+            <h6>Marketing officer</h6>
+          </div>
+        </div>
+
+        <div class="image">
+          <img  src="assets/cpnimages/home/avis1.png" class="img-fluid" alt=" avis 2">
+        </div>
+      </div>
+      <div class="col-md-3 card3">
+        <div class="card h-100 box3">
+          <div class="card-body">
+
+            <p class="card-text" style="margin-right: -43px;">"Grâce à la digitalisation de mon entreprise j’ai pu augmenter mon chiffre d’affaire, et c’est grâce au CPN que j’ai pu être bien accompagné et conseillé." </p>
+            <h4>Justin Rhodes</h4>
+            <h6>Marketing officer</h6>
+          </div>
+        </div>
+        <div class="image" >
+          <img src="assets/cpnimages/home/avis2.png" class="img-fluid" alt="avis 3">
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+<br>
+  </div>
+  </div>

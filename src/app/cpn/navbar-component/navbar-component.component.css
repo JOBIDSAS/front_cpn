@@ -1,0 +1,96 @@
+.navbar-nav{
+flex-direction: row;
+justify-content: space-between;
+display: flex;
+font-size: 14px;
+height: 40px
+}
+.drop{
+    min-width: -moz-available;
+    margin-left: -70px;
+  }
+.nav-link{
+    color: #111D5E !important;
+}
+.navlinkwhit{
+    color: #111D5E !important;
+}
+.con{
+    color: white !important;
+    border: none;
+    background: red;
+    border-radius: 25px;
+    width: 120px;
+    text-align: center;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.topnav li a:hover {
+    border-bottom: 0.1px solid red;
+
+}
+.nav_t{
+    color: white !important;
+}
+.nav_g{
+    background-color: #EBECF0;}
+.navwhit{
+    background-color: #EBECF0;
+
+}
+.nav_img{
+    width: 80px;
+    margin-bottom: 10px;
+}
+   .navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    margin-left: 75px;
+    z-index: 5;
+}
+
+
+
+    /*****************************************responsive css *************************************************/
+    @media screen and (max-width:  992px) {
+        .navbar-brand {
+            display: inline-block;
+            padding-top: .3125rem;
+            padding-bottom: .3125rem;
+            margin-right: 1rem;
+            font-size: 1.25rem;
+            line-height: inherit;
+            white-space: nowrap;
+            margin-left: 0;
+            z-index: 5;
+    }
+    .navbar-nav{
+        flex-direction: column;
+        justify-content: space-between;
+        display: flex;
+        font-size: 14px;
+        height:max-content;
+        }
+        .drop{
+            min-width: -moz-available;
+            margin-left: 0px;
+          }
+
+          
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) and (max-width : 1200px)  {
+    /******************************nav bar ****************************/
+    .drop{
+     min-width: -moz-available;
+     margin-left: -70px;
+    }     
+  
+}
