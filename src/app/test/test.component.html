@@ -343,7 +343,7 @@
                 <tbody *ngFor="let items of this.dataSource.filteredData">
                   <tr>
                     <th><p>{{items?.name}}</p></th>
-                    <td><input type="checkbox" name="service" (click)="selectService(items?.id)"  id="service"  > </td>
+                    <td><input type="radio" name="service" (click)="selectService(items?.id)"  id="service"  > </td>
                   </tr>
                 </tbody>
               </table>
@@ -359,7 +359,7 @@
             <tbody *ngFor="let items of this.dataSources.filteredData">
               <tr>
                 <th><p>{{items?.name}}</p></th>
-                <td><input type="checkbox" name="service" (click)="selectService(items?.id)"  id="service"  > </td>
+                <td><input type="radio" name="service" (click)="selectService(items?.id)"  id="service"  > </td>
               </tr>
             </tbody>
           </table>
