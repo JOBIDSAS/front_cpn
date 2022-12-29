@@ -25,13 +25,9 @@ export class TestComponent implements OnInit {
    development:any[]
    marketing:any[]
    transition:any[]=[]
+   transitions:any[]=[]
+
    activities:any[]
-      act = [
-        { id: 1, name: 'name1' },
-        { id: 2, name: 'name2' },
-        { id: 3, name: 'name3' },
-        { id: 4, name: 'name4' },
-    ];
    address:any
    cid:any
   get f() { return this.addEventForm.controls; }
@@ -133,6 +129,9 @@ this.calendarOption = {
   }
 
 ngOnInit(): void {
+  this.getTransitionServ()
+  this.getTransitionMar()
+
     this.getTransition()
     this.getActivite()      
 }
@@ -244,16 +243,38 @@ selectedRange(val){
   this.testService.getTransitions().subscribe(res=>{
     this.dataSource =  new MatTableDataSource(res?.data);
    console.log("transition",this.transition)
-   //  this.elegible=res?.data.filter(data=>data.category==='Services')
-   //  this.graphic=res?.data.filter(data=>data.category==='Graphique')
-    // this.montage=res?.data.filter(data=>data.category==='Montage')
-    // this.marketing=res?.data.filter(data=>data.category==='Marketing')
-    // this.development=res?.data.filter(data=>data.category==='Développement')
-    // console.log("elegi",this.elegible)
-    // console.log("suplimet",this.development)
+ 
  })
 }
+ 
+ /*********************** Get Category Graphic ******************/
 
+dataSources =  new MatTableDataSource();
+valuechanges(val){
+ this.dataSources.filter = val.trim().toLowerCase();
+ this.transitions=this.dataSources.filteredData
+}
+getTransitionServ(){
+ this.testService.getTransitionsServ().subscribe(res=>{
+   this.dataSources =  new MatTableDataSource(res?.data);
+  console.log("transition",this.transition)
+
+})
+}
+  /*********************** Get Category Marketing ******************/
+
+dataSourcem =  new MatTableDataSource();
+valuechangem(val){
+ this.dataSourcem.filter = val.trim().toLowerCase();
+ this.transitions=this.dataSourcem.filteredData
+}
+getTransitionMar(){
+ this.testService.getTransitionsMark().subscribe(res=>{
+   this.dataSourcem =  new MatTableDataSource(res?.data);
+  console.log("transition",this.transition)
+
+})
+}
 
 /*************************************services ***************************************/
 selectService(val){
@@ -289,6 +310,51 @@ changeEtatA(){
 changeEtatB(){
   this.showA=false
   this.showB=true
+}
+Visites:boolean=false;
+Ventes:boolean=false;
+utilisateurs:boolean=false;
+commerce:boolean=true;
+Vitrine:boolean=true;
+Market:boolean=true;
+bgColor : string = 'grey';
+bgColor2 : string = 'grey';
+bgColor3 : string = 'grey';
+
+changeColor(){
+  this.bgColor = 'rgb(35, 154, 0)';
+}
+changeColor2(){
+  this.bgColor2 = 'rgb(35, 154, 0)';
+}
+changeColor3(){
+  this.bgColor3 = 'rgb(35, 154, 0)';
+}
+clickCond1(){
+  this.Ventes=true; 
+  this.utilisateurs=false; 
+  this.Visites=false; 
+
+  this.commerce=true; 
+  this.Vitrine=true; 
+  this.Market=true; 
+}
+clickCond2(){
+  this.Visites=true; 
+  this.Ventes=false; 
+  this.utilisateurs=false; 
+
+   this.commerce=true; 
+  this.Vitrine=true; 
+  this.Market=true; 
+}
+clickCond3(){
+  this.utilisateurs=true; 
+  this.Visites=false; 
+  this.Ventes=false; 
+   this.commerce=true; 
+  this.Vitrine=true; 
+  this.Market=true; 
 }
 /**********************************************nombre visite ******************************************/
 

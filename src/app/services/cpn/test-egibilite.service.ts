@@ -23,9 +23,19 @@ export class TestEgibiliteService {
 
    /*********************** test/transitions/get ****************************/
   public getTransitions(): Observable<any>{
-    return this.http.get<any>(baseUrl+"/api/test/transitions/get")
+    return this.http.get<any>(baseUrl+"/api/test/transitions/cat/get?categorie=Développement")
   }
-  
+     /*********************** test/transitions/get Services  ****************************/
+
+  public getTransitionsServ(): Observable<any>{
+    return this.http.get<any>(baseUrl+"/api/test/transitions/cat/get?categorie=Services")
+  }
+
+       /*********************** test/transitions/get Marketing  ****************************/
+
+       public getTransitionsMark(): Observable<any>{
+        return this.http.get<any>(baseUrl+"/api/test/transitions/cat/get?categorie=Marketing")
+      }
   /*********************** test/grants/region/get ****************************/
      public regionalGrant(region,budget,naf): Observable<any>{
       return this.http.get<any>(baseUrl+"/api/test/grants/region/"+region+"/"+budget+"/"+naf)

@@ -441,8 +441,8 @@ margin-top: -11px;
             }
             .slide6 .image img{
                 order: 2;
-                height: 25%;
-                width: 15%;
+                height: 100%;
+                width: 75%;
                     }
             .slide6 .image h1{
                 order: 1;
@@ -450,7 +450,14 @@ margin-top: -11px;
                 text-align: center;
                 margin-bottom: 20px;
                     }
-
+                    .slide6 .image h1{
+                        font-size: 35px;
+                        font-family: "Poppins", sans-serif !important;
+                    }
+                        .slide6 .image h1:hover{
+                            color: red;
+                            zoom: 1.1;
+                            }
 
             .slide6 .test{
                 order: 2;
@@ -632,8 +639,13 @@ margin-top: -11px;
     height: 100%;
     }
     .slide8 .test h1{
-font-size: 50px;
+        font-size: 35px;
+        font-family: "Poppins", sans-serif !important;
     }
+        .slide8 .test h1:hover{
+            color: red;
+            zoom: 1.1;
+            }
     .slide8 .test select{
     width: 80%;
     height: 40px;
@@ -716,9 +728,14 @@ color: white;
     width:40%;
     height: 100%;
     }
-    .slide10 .test h1{
-    font-size: 50px;
+    .slide105 .test h1{
+        font-size: 35px;
+        font-family: "Poppins", sans-serif !important;
     }
+        .slide10 .test h1:hover{
+            color: red;
+            zoom: 1.1;
+            }
     .slide10 .test mat-radio-group{
         margin-top: 50px;
         display: flex;
@@ -812,8 +829,13 @@ color: white;
         height: 100%;
         }
         .slide11 .test h1{
-    font-size: 50px;
+            font-size: 35px;
+            font-family: "Poppins", sans-serif !important;
         }
+            .slide11 .test h1:hover{
+                color: red;
+                zoom: 1.1;
+                }
         .slide11 .test input{
         width: 80%;
         height: 40px;
@@ -933,8 +955,13 @@ color: white;
     height: 100%;
     }
     .slide14 .test h1{
-    font-size: 50px;
+        font-size: 35px;
+        font-family: "Poppins", sans-serif !important;
     }
+        .slide514 .test h1:hover{
+            color: red;
+            zoom: 1.1;
+            }
     .slide14 .test mat-radio-group{
         margin-top: 50px;
         display: flex;
@@ -970,7 +997,14 @@ color: white;
         text-align: center;
         margin-bottom: 20px;
             }
-
+            .slide15 .test h1{
+                font-size: 35px;
+                font-family: "Poppins", sans-serif !important;
+            }
+                .slide15 .test h1:hover{
+                    color: red;
+                    zoom: 1.1;
+                    }
 
 
     .slide15 .test{
@@ -1015,8 +1049,13 @@ color: white;
     height: 100%;
     }
     .slide16 .test h1{
-    font-size: 50px;
+        font-size: 35px;
+        font-family: "Poppins", sans-serif !important;
     }
+        .slide16 .test h1:hover{
+            color: red;
+            zoom: 1.1;
+            }
     .slide16 .test mat-radio-group{
         margin-top: 50px;
         display: flex;
@@ -1054,7 +1093,14 @@ color: white;
         text-align: center;
         margin-bottom: 20px;
             }
-
+            .slide17 .test h1{
+                font-size: 35px;
+                font-family: "Poppins", sans-serif !important;
+            }
+                .slide17 .test h1:hover{
+                    color: red;
+                    zoom: 1.1;
+                    }
 
 
     .slide17 .test{
@@ -1093,8 +1139,8 @@ color: white;
         }
         .slide18 .image img{
             order: 2;
-            height: 30%;
-            width: 15%;
+            height: 100%;
+            width: 90%;
                 }
         .slide18 .image h1{
             order: 2;
@@ -1102,7 +1148,14 @@ color: white;
             text-align: center;
             margin-bottom: 20px;
                 }
-
+                .slide18 .test h1{
+                    font-size: 35px;
+                    font-family: "Poppins", sans-serif !important;
+                }
+                    .slide18 .test h1:hover{
+                        color: red;
+                        zoom: 1.1;
+                        }
 
         .slide18 .test{
             order: 1;
@@ -1148,8 +1201,13 @@ color: white;
         height: 100%;
         }
         .slide19 .test h1{
-    font-size: 50px;
+            font-size: 35px;
+            font-family: "Poppins", sans-serif !important;
         }
+            .slide19 .test h1:hover{
+                color: red;
+                zoom: 1.1;
+                }
         .slide19 .test input{
         width: 80%;
         height: 40px;
@@ -1189,8 +1247,13 @@ color: white;
     height: 100%;
     }
     .slide20 .test h1{
-font-size: 50px;
+        font-size: 35px;
+        font-family: "Poppins", sans-serif !important;
     }
+        .slide20 .test h1:hover{
+            color: red;
+            zoom: 1.1;
+            }
     .slide20 .test input{
     width: 90%;
     height: 40px;
@@ -1303,7 +1366,11 @@ font-size: 50px;
  color: green;
  width: 80px;
 }
-
+.slide21 .nextIcon img:hover{
+    color: green;
+    width: 80px;
+    width: 100px;
+   }
    
 /*********************************************slide 24 ***********************/
 .slide24{
@@ -1332,9 +1399,13 @@ font-size: 50px;
     height: 100%;
     }
     .slide24 .test h1{
-    font-size: 50px;
-    text-align: center;
+        font-size: 35px;
+        font-family: "Poppins", sans-serif !important;
     }
+        .slide24 .test h1:hover{
+            color: red;
+            zoom: 1.1;
+            }
     .slide24 .test input{
     width: 80%;
     height: 40px;
@@ -1499,6 +1570,7 @@ font-size: 50px;
     justify-content: space-between;
     width: 100%;
     height: 100%;
+    padding-left: 10%;
 }
 .slide27 .image{
     order: 1;
@@ -1515,7 +1587,7 @@ font-size: 50px;
 
 .slide27 .test{
     order: 2;
-    display: flex;
+    display: contents;
     flex-direction: column;
     justify-content: flex-start;
     width:40%;
@@ -1620,7 +1692,19 @@ width: 88%;
   
 
 
-
+      .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 38;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+        width: 100%;
+        text-align: center;
+        }
 
 /*****************************************responsive css *************************************************/
 @media screen and (max-width: 768px) {
@@ -1672,10 +1756,14 @@ width: 88%;
    width:100%;
    }
 
-.slide0 .test h1{
-    font-size: 30px;
-   }
-
+   .slide0 .test h1{
+    font-size: 35px;
+    font-family: "Poppins", sans-serif !important;
+}
+    .slide0 .test h1:hover{
+        color: red;
+        zoom: 1.1;
+        }
 
 /*********************************************slide 1 ***********************/
 .slide1{
@@ -1696,8 +1784,13 @@ width: 88%;
 width: 100%;
 }
 .slide1 .test h1{
-    font-size: 30px;
-    }
+    font-size: 35px;
+    font-family: "Poppins", sans-serif !important;
+}
+    .slide1 .test h1:hover{
+        color: red;
+        zoom: 1.1;
+        }
 
   /*********************************************slide 2 ***********************/
   .slide2{
@@ -1725,9 +1818,13 @@ width: 100%;
    height: 100%;
    }
    .slide2 .test h1{
-    font-size: 30px;
-    text-align: center;
-   }
+    font-size: 35px;
+    font-family: "Poppins", sans-serif !important;
+}
+    .slide2 .test h1:hover{
+        color: red;
+        zoom: 1.1;
+        }
  
   /*********************************************slide 3 ***********************/
   .slide3{
@@ -1755,9 +1852,13 @@ width: 100%;
     height: 100%;
     }
     .slide3 .test h1{
-    font-size: 30px;
-    text-align: center;
+        font-size: 35px;
+        font-family: "Poppins", sans-serif !important;
     }
+        .slide3 .test h1:hover{
+            color: red;
+            zoom: 1.1;
+            }
  
 
 /*********************************************slide 4 ***********************/
@@ -1787,9 +1888,13 @@ width: 100%;
     height: 100%;
     }
     .slide4 .test h1{
-    font-size: 30px;
-    text-align: center;
+        font-size: 35px;
+        font-family: "Poppins", sans-serif !important;
     }
+        .slide4 .test h1:hover{
+            color: red;
+            zoom: 1.1;
+            }
 
     
      /*********************************************slide 5 ***********************/
@@ -1882,7 +1987,14 @@ width: 100%;
     text-align: center;
     margin-bottom: 20px;
         }
-
+        .slide6 .image h1{
+            font-size: 35px;
+            font-family: "Poppins", sans-serif !important;
+        }
+            .slide6 .image h1:hover{
+                color: red;
+                zoom: 1.1;
+                }
 
 .slide6 .test{
     order: 2;
@@ -1937,9 +2049,13 @@ width: 100%;
     margin-top: 20px;
     }
     .slide7 .test h1{
-    font-size: 30px;
-    text-align: center;
+        font-size: 35px;
+        font-family: "Poppins", sans-serif !important;
     }
+        .slide7 .test h1:hover{
+            color: red;
+            zoom: 1.1;
+            }
     .slide7 .test input{
     width: 80%;
     height: 20px;
@@ -2054,9 +2170,13 @@ width: 100%;
     height: 100%;
     }
     .slide8 .test h1{
-    font-size: 30px;
-    text-align: center;
+        font-size: 35px;
+        font-family: "Poppins", sans-serif !important;
     }
+        .slide8 .test h1:hover{
+            color: red;
+            zoom: 1.1;
+            }
 
     /*********************************************slide 9***********************/
 .slide9{
@@ -2085,9 +2205,13 @@ width: 100%;
     height: 100%;
     }
     .slide9 .test h1{
-    font-size: 30px;
-    text-align: center;
+        font-size: 35px;
+        font-family: "Poppins", sans-serif !important;
     }
+        .slide9 .test h1:hover{
+            color: red;
+            zoom: 1.1;
+            }
     .slide9 .test mat-radio-group{
         margin-top: 50px;
         display: flex;
@@ -2098,6 +2222,7 @@ width: 100%;
 
 
 /*********************************************slide 10***********************/
+
 .slide10{
     display: flex;
     flex-direction: column;
@@ -2122,9 +2247,13 @@ width: 100%;
     height: 100%;
     }
     .slide10 .test h1{
-    font-size: 30px;
-    text-align: center;
+        font-size: 35px;
+        font-family: "Poppins", sans-serif !important;
     }
+        .slide10 .test h1:hover{
+            color: red;
+            zoom: 1.1;
+            }
     .slide10 .test .block{
         display: flex;
         flex-direction: column;
@@ -2170,9 +2299,13 @@ width: 100%;
     height: 100%;
     }
     .slide11 .test h1{
-    font-size: 30px;
-    text-align: center;
+        font-size: 35px;
+        font-family: "Poppins", sans-serif !important;
     }
+        .slide11 .test h1:hover{
+            color: red;
+            zoom: 1.1;
+            }
 
   /*********************************************slide 12 ***********************/
   .slide12{
@@ -2197,7 +2330,14 @@ width: 100%;
     text-align: center;
     margin-bottom: 20px;
         }
-
+        .slide24 .image h1{
+            font-size: 35px;
+            font-family: "Poppins", sans-serif !important;
+        }
+            .slide24 .image h1:hover{
+                color: red;
+                zoom: 1.1;
+                }
 
 .slide12 .test{
     order: 2;
@@ -2232,10 +2372,14 @@ align-items: center;
 width:100%;
 height: 100%;
 }
-.slide13 .test h1{
-font-size: 30px;
-text-align: center;
+.slide13 .image h1{
+    font-size: 35px;
+    font-family: "Poppins", sans-serif !important;
 }
+    .slide13 .image h1:hover{
+        color: red;
+        zoom: 1.1;
+        }
 
 /*********************************************slide 14***********************/
 .slide14{
@@ -2263,9 +2407,13 @@ width:100%;
 height: 100%;
 }
 .slide14 .test h1{
-font-size: 30px;
-text-align: center;
+    font-size: 35px;
+    font-family: "Poppins", sans-serif !important;
 }
+    .slide14 .test h1:hover{
+        color: red;
+        zoom: 1.1;
+        }
 /*********************************************slide 15 ***********************/
 .slide15{
     display: flex;
@@ -2293,7 +2441,14 @@ text-align: center;
     text-align: center;
     margin-bottom: 20px;
         }
-
+        .slide24 .image h1{
+            font-size: 35px;
+            font-family: "Poppins", sans-serif !important;
+        }
+            .slide24 .image h1:hover{
+                color: red;
+                zoom: 1.1;
+                }
 
 
 .slide15 .test{
@@ -2334,10 +2489,13 @@ width:100%;
 height: 100%;
 }
 .slide16 .test h1{
-font-size: 30px;
-text-align: center;
+    font-size: 35px;
+    font-family: "Poppins", sans-serif !important;
 }
-
+    .slide16 .test h1:hover{
+        color: red;
+        zoom: 1.1;
+        }
 /*********************************************slide 17 ***********************/
 .slide17{
     display: flex;
@@ -2361,7 +2519,14 @@ text-align: center;
     text-align: center;
     margin-bottom: 20px;
         }
-
+        .slide17 .imnage h1{
+            font-size: 35px;
+            font-family: "Poppins", sans-serif !important;
+        }
+            .slide17 .image h1:hover{
+                color: red;
+                zoom: 1.1;
+                }
 .slide17 .test{
     order: 2;
     display: flex;
@@ -2399,7 +2564,14 @@ text-align: center;
         font-size: 30px;
         text-align: center;
         margin-bottom: 20px;
+            }    .slide18 .test h1{
+                font-size: 35px;
+                font-family: "Poppins", sans-serif !important;
             }
+                .slide18 .test h1:hover{
+                    color: red;
+                    zoom: 1.1;
+                    }
 
     .slide18 .test{
         order: 2;
@@ -2439,10 +2611,13 @@ text-align: center;
     height: 100%;
     }
     .slide19 .test h1{
-    font-size: 30px;
-    text-align: center;
+        font-size: 35px;
+        font-family: "Poppins", sans-serif !important;
     }
-
+        .slide19 .test h1:hover{
+            color: red;
+            zoom: 1.1;
+            }
         
 /*********************************************slide 20 ***********************/
 .slide20{
@@ -2711,7 +2886,14 @@ width: 60px;
     text-align: center;
     margin-bottom: 20px;
         }
-
+        .slide24 .image h1{
+            font-size: 35px;
+            font-family: "Poppins", sans-serif !important;
+        }
+            .slide24 .image h1:hover{
+                color: red;
+                zoom: 1.1;
+                }
 .slide26 .test{
     order: 2;
     display: flex;

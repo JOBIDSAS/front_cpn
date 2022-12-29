@@ -16,7 +16,7 @@
             </div>
             <div class="test animate__animated animate__backInDown">
                 <h1 >Choisissez votre  <span style="color: red;">Code postal</span></h1>
-                <input type="text"  formControlName="codeP" placeholder="entrer votre code postal">
+                <input type="text"  class="form-control"  formControlName="codeP" placeholder="entrer votre code postal">
 
             </div>
         </div>
@@ -26,15 +26,13 @@
             <div class="test animate__animated animate__backInDown">
                 <h1>Quel est votre  <span style="color: red;">secteur d'activité ?</span> </h1>
                 <fieldset class="form-group">
-                    <ng-select  
-                               bindLabel="name"
-                               placeholder="Choisir un activité"
-                               (change)="onChange($event)"
-                               formControlName="activite"
-                               autofocus
-                    >
-                    <ng-option *ngFor="let activities of act" [value]="activities.id">{{activities.name}}</ng-option>
-                    </ng-select>
+                    <ng-select [items]="activities?.data"
+                    bindLabel="name"
+                    placeholder="Choisir un activité"
+                    (change)="onChange($event)"
+                    formControlName="activite"
+                    autofocus  >
+         </ng-select>
                   </fieldset>  
             </div>
         </div>
@@ -61,7 +59,7 @@
             <div class="image animate__animated animate__bounceInLeft"><img src="assets/cpnimages/test-egibilite/3.png" height="15%" width= "39%"  alt=""></div>
             <div class="test animate__animated animate__backInDown" style="right: 40px;">
                 <h1>Nom de votre  <span style="color: red;"> entreprise</span></h1>
-                <input type="text" placeholder="nom societe" formControlName="nomSoc" >
+                <input type="text" class="form-control" placeholder="nom societe" formControlName="nomSoc" >
                 
             </div>
          </div>
@@ -95,22 +93,21 @@
                             </div>
                         </div>
                   </div>
-                    <div class="sousBlock">
-                        <input class="form-check-input" type="checkbox" formControlName="turnover"  name="turnover" id="turnover" value="0">
-                        <label class="form-check-label" for="inlineRadio1" id="Etat">Etat Stable</label>
-                        
-                    </div>                   
+                  <div class="sousBlock">
+                    <input class="form-check-input" type="radio" formControlName="turnover"  name="turnover" id="turnover" value="0">
+                    <label class="form-check-label" for="inlineRadio1">Etat Stable</label>
+                </div>                   
                 </div>
             </div>
         </div>
 
           <!--*********************** help **************************** -->
           <div class="slide6" *ngIf="test.active.step == 6">
-            <div class="image">
-                <h1>Avez vous déja obtenu des aides de l'état</h1>
+            <div class="image animate__animated animate__bounceInLeft">
+                <h1>Avez vous déja <span style="color: red;"> obtenu des aides de l'état </span></h1>
                 <img src="assets/cpnimages/test-egibilite/7.png" alt="">
             </div>
-            <div class="test">
+            <div class="test animate__animated animate__backInDown">
                 <select name="" formControlName="help" >
                     <option  *ngFor="let item of test.data[test.active.step].options " value="item" >{{ item }}</option>
                 </select>
@@ -140,9 +137,9 @@
  
         <!--*********************** nombre de salarie **************************** -->
         <div class="slide8" *ngIf="test.active.step == 8">
-            <div class="image"><img src="assets/cpnimages/test-egibilite/9.png" height="30%" alt=""></div>
-            <div class="test">
-                <h1>Nombre de salariés ?</h1>
+            <div class="image animate__animated animate__bounceInLeft"><img src="assets/cpnimages/test-egibilite/9.png" height="30%" alt=""></div>
+            <div class="test animate__animated animate__backInDown">
+                <h1>Nombre de <span style="color: red;">  salariés ?  </span> </h1>
                 <select  placeholder="choisir un Nombre de salariés"  formControlName="personneSal">
                     <option>select les nombres salaries</option>
                     <option  *ngFor="let item of test.data[test.active.step].options " >{{ item }}</option>
@@ -167,16 +164,17 @@
 
           <!--*********************** type site **************************** -->
           <div class="slide10" *ngIf="test.active.subStep == 2">
-            <div class="image"><img src="assets/cpnimages/test-egibilite/11.png" height="30%" alt=""></div>
-            <div class="test">
-                <h1>Quel est votre type de site internet ?</h1>
-                <mat-radio-group aria-label="Select an option"  formControlName="typeSite">
-                    <mat-radio-button value="E-commerce">E-commerce</mat-radio-button>
-                    <mat-radio-button value="Vitrine">Vitrine</mat-radio-button>
-                    <mat-radio-button value="Market-place">Market-place</mat-radio-button>
+            <div class="image animate__animated animate__bounceInLeft"><img src="assets/cpnimages/test-egibilite/11.png" height="30%" alt=""></div>
+            <div class="test animate__animated animate__backInDown">
+                <h1>Quel est votre type de  <span style="color: red;">  site internet ? </span></h1>
+                <mat-radio-group aria-label="Select an option"    formControlName="typeSite">
+                    <mat-radio-button value="E-commerce" *ngIf="commerce"   (click)="clickCond1()"[ngStyle]="{'color': bgColor}"    (click)="changeColor()">E-commerce</mat-radio-button>
+                    <mat-radio-button value="Vitrine" *ngIf="Vitrine"  [ngStyle]="{'color': bgColor2}" (click)="clickCond2() "  (click)="changeColor2()">Vitrine</mat-radio-button>
+                    <mat-radio-button value="Market-place"*ngIf="Market"  [ngStyle]="{'color': bgColor3}"  (click)="clickCond3()"  (click)="changeColor3()">Market-place</mat-radio-button>
                   </mat-radio-group>
-                  <div class="block">
-                      <div class="sousBlock">
+                
+                  <div class="block animate__animated animate__bounceInUp">
+                      <div class="sousBlock"  *ngIf="Ventes">
                         <p>Nombre de Vente</p>
                         <div class="qty">
                         <input type="text" formControlName="Nvente" #Nvente [readonly]="true"  >
@@ -186,7 +184,7 @@
                         </div>
                         </div>
                       </div>
-                      <div class="sousBlock">
+                      <div class="sousBlock" *ngIf="Visites">
                         <p>Nombre de Visite</p>
                         <div class="qty">
                         <input type="text" formControlName="Nvisite" #Nvisite [readonly]="true"   >
@@ -196,7 +194,7 @@
                         </div>
                         </div>
                       </div>
-                      <div class="sousBlock">
+                      <div class="sousBlock" *ngIf="utilisateurs">
                         <p>Nombre d'utilisateurs</p>
                         <div class="qty">
                         <input type="text" formControlName="Nuser" #Nuser [readonly]="true"  >
@@ -247,23 +245,23 @@
     <div *ngIf="test.active.subStepCat == 2">
          <!--*********************** have crm **************************** -->
          <div class="slide14" *ngIf="test.active.subStep == 1">
-            <div class="image  "><img src="assets/cpnimages/test-egibilite/17.png"  alt=""></div>
-            <div class="test ">
-                <h1>Utilisez-vous des Plate-formes en ligne ou des logiciels pour faciliter vos ventes ?</h1>
+            <div class="image animate__animated animate__bounceInLeft  "><img src="assets/cpnimages/test-egibilite/17.png"  alt=""></div>
+            <div class="test animate__animated animate__backInDown ">
+                <h1>Utilisez-vous des Plate-formes en ligne ou des logiciels pour  <span style="color: red;">faciliter vos ventes ?</span> </h1>
                 <mat-radio-group aria-label="Select an option"  formControlName="haveCrm">
-                    <mat-radio-button value="oui">Oui</mat-radio-button>
-                    <mat-radio-button value="non">Non</mat-radio-button>
+                    <mat-radio-button  id="siteOui" value="oui">Oui</mat-radio-button>
+                    <mat-radio-button  id="siteNon" value="non">Non</mat-radio-button>
                   </mat-radio-group>
             </div>
         </div>
 
          <!--*********************** type crm **************************** -->
          <div class="slide15" *ngIf="test.active.subStep == 2">
-            <div class="image">
-                <h1>Quels types d'outils utilisez-vous pour vos ventes ?</h1>
+            <div class="image animate__animated animate__bounceInLeft">
+                <h1>Quels types d'outils utilisez-vous pour  <span style="color: red;">vos ventes ?</span> </h1>
                 <p>(Exemple:un CRM)</p>
             </div>
-            <div class="test">
+            <div class="test animate__animated animate__backInDown">
                 <select name="" formControlName="nomCrm">
                     <option>choisir un crm</option>
                     <option value="Sage" *ngFor="let item of test.data[test.active.step].crm[test.active.subStep].options "><img src="assets/cpnimages/test-egibilite/logo-sage.png" height="20px" alt="">{{ item }}</option>
@@ -275,22 +273,22 @@
          <!--*********************** have erp **************************** -->
          <div class="slide16" *ngIf="test.active.subStep == 3">
             <div class="image animate__animated animate__bounceInLeft"><img src="assets/cpnimages/test-egibilite/14.png" height="30%" alt=""></div>
-            <div class="test">
-                <h1>Utilisez-vous des Plate-formes en ligne ou des logiciels pour faciliter votre logistique interne ?</h1>
+            <div class="test animate__animated animate__backInDown">
+                <h1>Utilisez-vous des Plate-formes en ligne ou des logiciels pour <span style="color: red;"> faciliter votre logistique interne ?</span></h1>
                 <mat-radio-group aria-label="Select an option" formControlName="haveErp">
-                    <mat-radio-button value="oui">Oui</mat-radio-button>
-                    <mat-radio-button value="non">Non</mat-radio-button>
+                    <mat-radio-button   id="siteOui"value="oui">Oui</mat-radio-button>
+                    <mat-radio-button   id="siteNon"value="non">Non</mat-radio-button>
                   </mat-radio-group>
             </div>
         </div>
 
          <!--*********************** type erp **************************** -->
          <div class="slide17" *ngIf="test.active.subStep == 4">
-            <div class="image">
-                <h1>Quels types d'outils utilisez-vous pour votre logistique ?</h1>
+            <div class="image animate__animated animate__bounceInLeft">
+                <h1>Quels types d'outils utilisez-vous pour <span style="color: red;">  votre logistique ? </span></h1>
                 <p>(Exemple:un ERP)</p>
             </div>
-            <div class="test">
+            <div class="test animate__animated animate__backInDown">
                 <select name="" formControlName="nomErp">
                     <option>choisir un erp</option>
                     <option value="Sage" *ngFor="let item of test.data[test.active.step].crm[test.active.subStep].options "><img src="assets/cpnimages/test-egibilite/logo-sage.png" height="20px" alt="">{{ item }}</option>
@@ -315,38 +313,89 @@
 </div>
 
    <!--*********************** service **************************** -->
-   <div class="slide27" *ngIf="test.active.step == 10">
-    <div class="image">
-    </div>
-    <div class="test">
-       <div class="bSearch">
-        <label for="">Service</label>
-        <input class="search" type="text"  (keyup)="valuechange($event.target.value)"  >
-        <i class="far fa-search"></i>
-       </div>
-       <div class="contentTab">
+   <div  *ngIf="test.active.step == 10">
+    <h1 style="text-align: center;">Quelle type de conseiller <span style="color: red;"> d'accompagnement ?</span>  </h1>
+    <div class="input-group rounded" style="margin: auto; width: 50%; /* border: 3px solid green; */ padding: 10px;">
+        <input  (keyup)="valuechange($event.target.value)"  type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+        <span class="input-group-text border-0" id="search-addon">
+          <i class="fas fa-search"></i>
+        </span>
+        <!-- <select  class="form-select" aria-label="Default select example">
+            <option value="">-- Veuillez choisir une type de Développement web --</option>
+            <option *ngFor="let items of this.dataSource.filteredData" (click)="selectService(items?.id)"  id="service" value="1">{{items?.name}}</option>
+     
+         </select> -->
+      </div>
+    
+       <div class="slide27">
+        <div class="image animate__animated animate__bounceInLeft">
+        </div>
+   
+        <div class="test animate__animated animate__backInDown">
+            <div class="card">
 
-        <div class="list-item" *ngFor="let items of this.dataSource.filteredData">
-            <div class="item-content">
-                <div class="block1"><i class="fas fa-chess-rook"></i></div>
-                <div class="block2"><p>{{items?.name}}</p></div>
-                <div class="block3"><input type="radio" name="service" (click)="selectService(items?.id)"  id="service"  > 
-                </div>                
+            <table class="table table-hover" >
+                <thead>
+                  <tr style="color: red; border-bottom: 2px solid rgba(238, 238, 238, 0);">
+                    <th scope="col">Développement web</th> 
+                  </tr>
+                </thead>
+                <tbody *ngFor="let items of this.dataSource.filteredData">
+                  <tr>
+                    <th><p>{{items?.name}}</p></th>
+                    <td><input type="checkbox" name="service" (click)="selectService(items?.id)"  id="service"  > </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-          </div> 
+            <div class="card">
 
-       </div>
-    </div>
- </div>
+           <table class="table table-hover" >
+            <thead>
+                <tr style="color: red; border-bottom: 2px solid rgba(238, 238, 238, 0);">
+                    <th scope="col">Service</th> 
+              </tr>
+            </thead>
+            <tbody *ngFor="let items of this.dataSources.filteredData">
+              <tr>
+                <th><p>{{items?.name}}</p></th>
+                <td><input type="checkbox" name="service" (click)="selectService(items?.id)"  id="service"  > </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+          <div class="card">
+
+          <table class="table table-hover" >
+            <thead>
+                <tr style="color: red; border-bottom: 2px solid rgba(238, 238, 238, 0);">
+                    <th scope="col">Marketing</th> 
+              </tr>
+            </thead>
+            <tbody *ngFor="let items of this.dataSourcem.filteredData">
+              <tr>
+                <th><p>{{items?.name}}</p></th>
+                <td><input type="radio" name="service" (click)="selectService(items?.id)"  id="service"  > </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+     </div>
+   </div>
+ 
            <!--*********************** budget **************************** -->
            <div class="slide18" *ngIf="test.active.step == 11">
-            <div class="image">
-                <h1>Budget d'investissement</h1>
+            <div class="image animate__animated animate__bounceInLeft">
                 <img src="assets/cpnimages/test-egibilite/7.png" alt="">
             </div>
-            <div class="test">
+            <div class="test animate__animated animate__backInDown">
+                <h1><span style="color: red;">Budget</span> d'investissement</h1>
+                
+<p></p>
+<p></p>
                 <select name="" formControlName="budget">
-                    <option>choisir un budget</option>
+                     <option value="" disabled selected>choisir un budget</option>
                     <option value="300">300$</option>
                     <option value="400">400$</option>
                     <option value="500">500$</option>
@@ -357,25 +406,25 @@
 
           <!--*********************** siret **************************** -->
           <div class="slide19" *ngIf="test.active.step == 12">
-            <div class="image"><img src="assets/cpnimages/test-egibilite/18.png" height="30%" alt=""></div>
-            <div class="test">
-                <h1>Numéro de Siret</h1>
-                <input type="text" formControlName="siret" placeholder="EX: 13168813881">
+            <div class="image animate__animated animate__bounceInLeft"><img src="assets/cpnimages/test-egibilite/18.png" height="30%" alt=""></div>
+            <div class="test animate__animated animate__backInDown">
+                <h1>Numéro de <span style="color: red;">Siret</span> </h1>
+                <input type="text"class="form-control" formControlName="siret" placeholder="EX: 13168813881">
             </div>
          </div>
 
           <!--*********************** adresse **************************** -->
           <div class="slide20" *ngIf="test.active.step == 13">
-            <div class="image"><img src="assets/cpnimages/test-egibilite/19.png" alt=""></div>
-            <div class="test">
+            <div class="image animate__animated animate__bounceInLeft"><img src="assets/cpnimages/test-egibilite/19.png" alt=""></div>
+            <div class="test animate__animated animate__backInDown">
                 <h1>Adresse</h1>
                 <div class="block1">
                 <label for="">Adresse</label>
-                <input type="text" formControlName="adresse" >
+                <input  class="form-control"   type="text" formControlName="adresse" >
                 </div>
                 <div class="block2">
-               <label for="">ville</label> <input type="text" formControlName="city">
-                <label for="">code postal</label><input type="text" formControlName="codeP" [readonly]="true">
+               <input placeholder="ville" class="form-control"               type="text" formControlName="city">
+              <input placeholder="code postal" class="form-control" type="text" formControlName="codeP" [readonly]="true">
                 </div>
             </div>
          </div>
@@ -416,8 +465,8 @@
 
            <!--*********************** felicitaton1 **************************** -->  
            <div class="slide21" *ngIf="test.active.step == 15" >
-            <div class="image"><img  src="assets/cpnimages/test-egibilite/21.png" alt=""></div>
-            <div class="test">
+            <div class="image animate__animated animate__bounceInLeft"><img  src="assets/cpnimages/test-egibilite/21.png" alt=""></div>
+            <div class="test animate__animated animate__backInDown">
                 <h1>Félicitaion</h1>
                 <h1>vous êtes éligible</h1>
                 <img src="assets/cpnimages/test-egibilite/24.png" alt="">
@@ -432,8 +481,8 @@
 
            <!--*********************** felicitaton2 **************************** -->
            <div class="slide21" *ngIf="eleg == true && test.active.step == 16">
-            <div class="image"><img  src="assets/cpnimages/test-egibilite/21.png" alt=""></div>
-            <div class="test">
+            <div class="image animate__animated animate__bounceInLeft"><img  src="assets/cpnimages/test-egibilite/21.png" alt=""></div>
+            <div class="test animate__animated animate__backInDown">
                 <h1>Félicitaion</h1>
                 <h1>vous êtes éligible</h1>
                 <img src="assets/cpnimages/test-egibilite/24.png" alt="">
@@ -449,8 +498,8 @@
          
            <!--*********************** failed **************************** -->
            <div class="slide21" *ngIf="eleg == false && test.active.step == 16">
-            <div class="image"></div>
-            <div class="test">
+            <div class="image animate__animated animate__bounceInLeft"></div>
+            <div class="test animate__animated animate__backInDown">
                 <h1  class="faild">Malheureusement</h1>
                 <h1  class="faild">vous n'êtes pas éligible</h1>
                 <img src="assets/cpnimages/test-egibilite/25.png"  alt="">
@@ -461,8 +510,8 @@
 
             <!--***********************agenda **************************** -->
         <div class="slide24" *ngIf="test.active.step == 17">
-            <div class="image"><img src="assets/cpnimages/test-egibilite/27.png" height="30%" alt=""></div>
-            <div class="test">
+            <div class="image animate__animated animate__bounceInLeft"><img src="assets/cpnimages/test-egibilite/27.png" height="30%" alt=""></div>
+            <div class="test animate__animated animate__backInDown">
                 <h1>Vos disponibilités</h1>
                 <div class="calend">
                      <full-calendar   #fullcalendar [options]="calendarOption"
@@ -477,8 +526,8 @@
 
              <!--*********************** felicitaton3 **************************** -->
            <div class="slide25" *ngIf="test.active.step == 18">
-            <div class="image"></div>
-            <div class="test">
+            <div class="image animate__animated animate__bounceInLeft"></div>
+            <div class="test animate__animated animate__backInDown">
                 <img src="assets/cpnimages/test-egibilite/28.png" alt="">
                 <br>
                 <p>Félicitaion</p>
